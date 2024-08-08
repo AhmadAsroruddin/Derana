@@ -1,22 +1,45 @@
+import 'package:derana_multipart/presentation/bloc/routes/route_cubit.dart';
+import 'package:derana_multipart/presentation/routes/router_delegate.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import './locator.dart' as di;
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await di.init();
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  late MyRouterDelegate myRouterDelegate;
+
+  @override
+  void initState() {
+    myRouterDelegate = di.locator<MyRouterDelegate>();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const Text('Flutter Demo Home Page'),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (_) => di.locator<RouteCubit>()),
+      ],
+      child: MaterialApp(
+          title: 'Flutter Demo',
+          theme: ThemeData(
+            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+            useMaterial3: true,
+          ),
+          home: Router(routerDelegate: myRouterDelegate)),
     );
   }
 }

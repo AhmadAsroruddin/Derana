@@ -1,29 +1,56 @@
+import 'package:derana_multipart/presentation/bloc/routes/route_cubit.dart';
+import 'package:derana_multipart/presentation/pages/onboarding_page.dart';
 import 'package:flutter/material.dart';
 
 class MyRouterDelegate extends RouterDelegate
     with ChangeNotifier, PopNavigatorRouterDelegateMixin {
   final GlobalKey<NavigatorState> _navigatorKey;
 
-  MyRouterDelegate() : _navigatorKey = GlobalKey<NavigatorState>() {}
+  MyRouterDelegate(this.routeCubit)
+      : _navigatorKey = GlobalKey<NavigatorState>() {
+    _init();
+  }
+
   bool? isFirstTime;
+  final RouteCubit routeCubit;
+  List<Page> historyStack = [];
 
   Future<void> _init() async {
+    isFirstTime = routeCubit.isFirstTime();
     notifyListeners();
   }
 
   @override
+  GlobalKey<NavigatorState>? get navigatorKey => _navigatorKey;
+
+  @override
+  Future<void> setNewRoutePath(configuration) async {}
+
+  @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    if (isFirstTime == null) {
+      return const CircularProgressIndicator();
+    } else if (isFirstTime == true) {
+      historyStack = _splashStack;
+    } else {
+      historyStack = _loggedOutStack;
+    }
+
+    return Navigator(
+      key: navigatorKey,
+      pages: historyStack,
+      onPopPage: (route, result) {
+        final didPop = route.didPop(result);
+
+        if (!didPop) {
+          return false;
+        }
+        notifyListeners();
+        return true;
+      },
+    );
   }
 
-  @override
-  // TODO: implement navigatorKey
-  GlobalKey<NavigatorState>? get navigatorKey => throw UnimplementedError();
-
-  @override
-  Future<void> setNewRoutePath(configuration) {
-    // TODO: implement setNewRoutePath
-    throw UnimplementedError();
-  }
+  List<Page> get _splashStack => [const MaterialPage(child: OnboardingPage())];
+  List<Page> get _loggedOutStack => [];
 }
