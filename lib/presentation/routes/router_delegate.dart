@@ -51,6 +51,6 @@ class MyRouterDelegate extends RouterDelegate
     );
   }
 
-  List<Page> get _splashStack => [const MaterialPage(child: OnboardingPage())];
+  List<Page> get _splashStack => [MaterialPage(child: OnboardingPage())];
   List<Page> get _loggedOutStack => [];
 }

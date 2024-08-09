@@ -34,12 +34,16 @@ class _MyAppState extends State<MyApp> {
         BlocProvider(create: (_) => di.locator<RouteCubit>()),
       ],
       child: MaterialApp(
-          title: 'Flutter Demo',
-          theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-            useMaterial3: true,
-          ),
-          home: Router(routerDelegate: myRouterDelegate)),
+        title: 'Flutter Demo',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
+        ),
+        home: Router(
+          routerDelegate: myRouterDelegate,
+        ),
+      ),
     );
   }
 }
