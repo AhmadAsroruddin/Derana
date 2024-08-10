@@ -1,5 +1,5 @@
+import 'package:derana_multipart/presentation/pages/Authentication/auth_page.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -197,6 +197,9 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   ),
                 ),
                 GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).pushNamed(AuthPage.routeName);
+                  },
                   child: Text(
                     "Daftar di sini",
                     style: GoogleFonts.plusJakartaSans().copyWith(

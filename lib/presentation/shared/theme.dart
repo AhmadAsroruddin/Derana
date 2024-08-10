@@ -13,24 +13,27 @@ Color greenColor = const Color(0xff22B07D);
 Color numberBackgroundColor = const Color(0xff1A1D2E);
 Color redColor = const Color(0xffFF2566);
 Color primaryColor = const Color.fromRGBO(0, 164, 222, 1.0);
+Color anotherGrey = const Color.fromRGBO(109, 109, 109, 1.0);
 
-TextStyle blackTextStyle = GoogleFonts.poppins(
+TextStyle blackTextStyle = GoogleFonts.plusJakartaSans(
   color: blackColor,
 );
 
-TextStyle whiteTextStyle = GoogleFonts.poppins(
+TextStyle lightGreyTextStyle = GoogleFonts.plusJakartaSans(color: anotherGrey);
+
+TextStyle whiteTextStyle = GoogleFonts.plusJakartaSans(
   color: whiteColor,
 );
 
-TextStyle greyTextStyle = GoogleFonts.poppins(
+TextStyle greyTextStyle = GoogleFonts.plusJakartaSans(
   color: greyColor,
 );
 
-TextStyle blueTextStyle = GoogleFonts.poppins(
+TextStyle blueTextStyle = GoogleFonts.plusJakartaSans(
   color: blueColor,
 );
 
-TextStyle greenTextStyle = GoogleFonts.poppins(
+TextStyle greenTextStyle = GoogleFonts.plusJakartaSans(
   color: greenColor,
 );
 
