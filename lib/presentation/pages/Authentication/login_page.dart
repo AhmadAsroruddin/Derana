@@ -1,3 +1,4 @@
+import 'package:derana_multipart/presentation/pages/beranda/tab_page.dart';
 import 'package:derana_multipart/presentation/shared/const.dart';
 import 'package:derana_multipart/presentation/shared/theme.dart';
 import 'package:flutter/material.dart';
@@ -79,16 +80,24 @@ class _LoginPageState extends State<LoginPage> {
             ),
           ],
         ),
-        Center(
-          child: Container(
-            height: deviceHeight * 0.06,
-            decoration: BoxDecoration(
-                color: primaryColor, borderRadius: BorderRadius.circular(30)),
-            child: Center(
-              child: Text(
-                "Masuk",
-                style: whiteTextStyle.copyWith(
-                    fontWeight: semiBold, fontSize: deviceWidth * 0.04),
+        GestureDetector(
+          onTap: () {
+            if (email.text == "admin@gmail.com" &&
+                password.text == "password") {
+              Navigator.of(context).pushNamed(TabPage.routeName);
+            }
+          },
+          child: Center(
+            child: Container(
+              height: deviceHeight * 0.06,
+              decoration: BoxDecoration(
+                  color: primaryColor, borderRadius: BorderRadius.circular(30)),
+              child: Center(
+                child: Text(
+                  "Masuk",
+                  style: whiteTextStyle.copyWith(
+                      fontWeight: semiBold, fontSize: deviceWidth * 0.04),
+                ),
               ),
             ),
           ),
