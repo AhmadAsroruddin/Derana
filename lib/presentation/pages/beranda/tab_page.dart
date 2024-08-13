@@ -1,6 +1,8 @@
+import 'package:derana_multipart/presentation/pages/belajar/belajar_page.dart';
 import 'package:derana_multipart/presentation/pages/beranda/beranda_page.dart';
 import 'package:derana_multipart/presentation/shared/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class TabPage extends StatefulWidget {
   const TabPage({super.key});
@@ -17,7 +19,7 @@ class _TabPageState extends State<TabPage> {
   void initState() {
     _pages = [
       {'page': const BerandaPage(), 'title': "Beranda"},
-      {'page': const BerandaPage(), 'title': "Beranda"},
+      {'page': const BelajarPage(), 'title': "Belajar"},
       {'page': const BerandaPage(), 'title': "Beranda"}
     ];
     super.initState();
@@ -44,8 +46,10 @@ class _TabPageState extends State<TabPage> {
             label: "Home",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.home_filled),
-            label: "Home",
+            icon: Icon(
+              FontAwesomeIcons.bookOpen,
+            ),
+            label: "Belajar",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.home_filled),
