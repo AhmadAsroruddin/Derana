@@ -177,7 +177,7 @@ class BerandaPage extends StatelessWidget {
                       Container(
                         padding: EdgeInsets.only(left: deviceWidth * 0.09),
                         width: deviceWidth,
-                        child: SingleChildScrollView(
+                        child: const SingleChildScrollView(
                           scrollDirection: Axis.horizontal,
                           child: Row(
                             children: <Widget>[
