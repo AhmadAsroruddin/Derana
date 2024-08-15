@@ -13,7 +13,8 @@ class FeatureWidget extends StatelessWidget {
   final String name;
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
+      color: Colors.white,
       width: deviceWidth * 0.15,
       height: deviceHeight * 0.11,
       child: Column(

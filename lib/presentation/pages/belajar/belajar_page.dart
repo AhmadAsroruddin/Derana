@@ -21,6 +21,7 @@ class BelajarPage extends StatelessWidget {
                 horizontal: deviceWidth * 0.06,
               ),
               width: deviceWidth,
+              margin: EdgeInsets.only(top: deviceHeight * 0.02),
               height: deviceHeight * 0.06,
               decoration: const BoxDecoration(
                 border: BorderDirectional(
@@ -47,7 +48,7 @@ class BelajarPage extends StatelessWidget {
                     TopCardBelajar(
                       color: Colors.blue,
                       title: "718",
-                      subtitle: "Bahasa Daerah",
+                      subtitle: "Bahasa",
                     ),
                     TopCardBelajar(
                       color: Colors.orange,
@@ -68,18 +69,12 @@ class BelajarPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
-              height: deviceHeight * 0.03,
-            ),
             Padding(
               padding: EdgeInsets.only(left: deviceWidth * 0.06),
               child: Text(
                 "Belajar cepat dan mudah dengan memilih\nmenu di bawah ini",
                 style: blackTextStyle,
               ),
-            ),
-            SizedBox(
-              height: deviceHeight * 0.01,
             ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: deviceWidth * 0.06),
@@ -127,6 +122,7 @@ class BelajarPage extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(
                 left: deviceWidth * 0.06,
+                bottom: deviceHeight * 0.01,
               ),
               child: Text(
                 "Temukan bahasa daerah yang ingin kamu\npelajari berdasarkan provinsi di Indonesia",
@@ -140,7 +136,7 @@ class BelajarPage extends StatelessWidget {
                 padding: EdgeInsets.only(
                   left: deviceWidth * 0.06,
                 ),
-                child: SingleChildScrollView(
+                child: const SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
                     children: <Widget>[
@@ -168,10 +164,10 @@ class ProvinceCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: deviceWidth * 0.35,
-      height: deviceHeight * 0.18,
+      height: deviceHeight * 0.2,
       margin: EdgeInsets.only(right: deviceWidth * 0.05),
       decoration: BoxDecoration(
-        border: Border.all(width: .5),
+        border: Border.all(width: .2),
         borderRadius: BorderRadius.circular(
           15,
         ),
@@ -180,7 +176,7 @@ class ProvinceCard extends StatelessWidget {
         children: [
           Container(
             width: deviceWidth * 0.35,
-            height: deviceHeight * 0.13,
+            height: deviceHeight * 0.15,
             padding: EdgeInsets.symmetric(vertical: deviceHeight * 0.01),
             child: Center(
               child: Image.asset(
@@ -192,10 +188,10 @@ class ProvinceCard extends StatelessWidget {
           Container(
             width: deviceWidth * 0.35,
             padding: EdgeInsets.only(left: deviceWidth * 0.05),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 border: BorderDirectional(
               top: BorderSide(
-                width: .5,
+                width: .2,
               ),
             )),
             child: Column(

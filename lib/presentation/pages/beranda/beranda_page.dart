@@ -195,7 +195,10 @@ class BerandaPage extends StatelessWidget {
                   right: 0,
                   left: 0,
                   child: Container(
-                    padding: const EdgeInsets.all(10),
+                    padding: EdgeInsets.symmetric(
+                      vertical: deviceHeight * 0.01,
+                      horizontal: deviceWidth * 0.01,
+                    ),
                     decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
