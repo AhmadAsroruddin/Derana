@@ -53,7 +53,7 @@ class _TabPageState extends State<TabPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.home_filled),
-            label: "Home",
+            label: "Temukan",
           ),
         ],
       ),

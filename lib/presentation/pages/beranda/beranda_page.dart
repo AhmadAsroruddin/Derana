@@ -2,7 +2,6 @@ import 'package:derana_multipart/presentation/shared/const.dart';
 import 'package:derana_multipart/presentation/shared/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-
 import '../../shared/feature_widget.dart';
 import '../../shared/flying_row_widget.dart';
 import '../../shared/video_container_widget.dart';
@@ -33,7 +32,7 @@ class BerandaPage extends StatelessWidget {
                           left: deviceWidth * 0.1,
                         ),
                         width: deviceWidth,
-                        height: deviceHeight * 0.25,
+                        height: deviceHeight * 0.28,
                         decoration: const BoxDecoration(
                           color: Color.fromRGBO(147, 227, 255, 1.0),
                           image: DecorationImage(
@@ -81,7 +80,7 @@ class BerandaPage extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.only(top: deviceHeight * 0.12),
+                        margin: EdgeInsets.only(top: deviceHeight * 0.05),
                         padding: EdgeInsets.symmetric(
                           horizontal: deviceWidth * 0.075,
                         ),
@@ -237,73 +236,47 @@ class BerandaPage extends StatelessWidget {
                   ),
                 ),
                 Positioned(
-                  top: deviceHeight * 0.274,
+                  top: deviceHeight * 0.285,
                   left: deviceWidth * 0.05,
                   right: deviceWidth * 0.05,
                   child: Container(
                     width: deviceWidth * 0.5,
-                    height: deviceHeight * 0.13,
+                    height: deviceHeight * 0.10,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(20),
                     ),
-                    child: Column(
-                      children: <Widget>[
-                        Padding(
-                          padding: EdgeInsets.symmetric(
-                            horizontal: deviceHeight * 0.01,
-                            vertical: deviceHeight * 0.02,
-                          ),
-                          child: const Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            children: <Widget>[
-                              FlyingRowWidget(
-                                image: "trophy",
-                                title: "Kelas",
-                                subtitle: "Pemula",
-                              ),
-                              FlyingRowWidget(
-                                image: "coin",
-                                title: "Koin",
-                                subtitle: "0",
-                              ),
-                              FlyingRowWidget(
-                                image: "voucher",
-                                title: "Voucher",
-                                subtitle: "32",
-                              ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: primaryColor,
-                              borderRadius: const BorderRadius.only(
-                                bottomLeft: Radius.circular(15),
-                                bottomRight: Radius.circular(15),
-                              ),
-                            ),
+                    child: Container(
+                      margin: const EdgeInsets.all(10),
+                      child: ListView(
+                        children: <Widget>[
+                          Card(
                             child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: <Widget>[
-                                Icon(
-                                  Icons.account_circle,
-                                  color: whiteColor,
+                              children: [
+                                Container(
+                                  margin: const EdgeInsets.all(10),
+                                  child: ImageIcon(
+                                    AssetImage("assets/image/icon_derana.png"),
+                                    color: Colors.blue,
+                                  ),
                                 ),
-                                Text(
-                                  "Sambungin akun kamu sekarang, Yuk!",
-                                  style: whiteTextStyle,
+                                const Text(
+                                  "Bantu kami melengkapi data \nbahasa daerah kamu",
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                  ),
                                 ),
-                                Icon(
-                                  Icons.chevron_right,
-                                  color: whiteColor,
-                                )
+                                SizedBox(
+                                  width: deviceWidth * 0.01,
+                                ),
+                                ElevatedButton(
+                                    onPressed: () {},
+                                    child: Text("Selanjutnya"))
                               ],
                             ),
-                          ),
-                        )
-                      ],
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 )
