@@ -267,7 +267,7 @@ class BerandaPage extends StatelessWidget {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: deviceWidth * 0.01,
+                                  width: deviceWidth * 0.02,
                                 ),
                                 ElevatedButton(
                                     onPressed: () {},
