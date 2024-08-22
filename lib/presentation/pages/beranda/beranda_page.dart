@@ -1,7 +1,7 @@
 import 'package:derana_multipart/presentation/shared/const.dart';
 import 'package:derana_multipart/presentation/shared/theme.dart';
 import 'package:flutter/material.dart';
-
+import 'package:percent_indicator/percent_indicator.dart';
 import '../../shared/feature_widget.dart';
 import '../../shared/video_container_widget.dart';
 
@@ -65,7 +65,7 @@ class _BerandaPageState extends State<BerandaPage> {
                           left: deviceWidth * 0.1,
                         ),
                         width: deviceWidth,
-                        height: deviceHeight * 0.2,
+                        height: deviceHeight * 0.28,
                         decoration: const BoxDecoration(
                           color: Color.fromRGBO(147, 227, 255, 1.0),
                           image: DecorationImage(
@@ -110,6 +110,7 @@ class _BerandaPageState extends State<BerandaPage> {
                         ),
                       ),
                       Container(
+                        margin: EdgeInsets.only(top: deviceHeight * 0.05),
                         padding: EdgeInsets.symmetric(
                           horizontal: deviceWidth * 0.075,
                         ),
