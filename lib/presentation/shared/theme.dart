@@ -15,25 +15,25 @@ Color redColor = const Color(0xffFF2566);
 Color primaryColor = const Color.fromRGBO(0, 164, 222, 1.0);
 Color anotherGrey = const Color.fromRGBO(109, 109, 109, 1.0);
 
-TextStyle blackTextStyle = GoogleFonts.plusJakartaSans(
-  color: blackColor,
+TextStyle blackTextStyle = GoogleFonts.openSans(
+  color: Colors.black,
 );
 
-TextStyle lightGreyTextStyle = GoogleFonts.plusJakartaSans(color: anotherGrey);
+TextStyle lightGreyTextStyle = GoogleFonts.openSans(color: anotherGrey);
 
-TextStyle whiteTextStyle = GoogleFonts.plusJakartaSans(
+TextStyle whiteTextStyle = GoogleFonts.openSans(
   color: whiteColor,
 );
 
-TextStyle greyTextStyle = GoogleFonts.plusJakartaSans(
+TextStyle greyTextStyle = GoogleFonts.openSans(
   color: greyColor,
 );
 
-TextStyle blueTextStyle = GoogleFonts.plusJakartaSans(
+TextStyle blueTextStyle = GoogleFonts.openSans(
   color: blueColor,
 );
 
-TextStyle greenTextStyle = GoogleFonts.plusJakartaSans(
+TextStyle greenTextStyle = GoogleFonts.openSans(
   color: greenColor,
 );
 

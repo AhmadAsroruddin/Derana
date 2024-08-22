@@ -1,6 +1,6 @@
 import 'package:derana_multipart/presentation/shared/theme.dart';
+import 'package:derana_multipart/presentation/shared/video_container_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:percent_indicator/percent_indicator.dart';
 
 import '../../shared/const.dart';
 import '../../shared/feature_widget.dart';
@@ -177,7 +177,7 @@ class TemukanPage extends StatelessWidget {
                 ),
                 child: Text(
                   "Temukan set kreasi pembelajaran\nbahasa daerah yang dibuat oleh komunitas",
-                  style: blackTextStyle,
+                  style: blackTextStyle.copyWith(fontWeight: medium),
                 ),
               ),
               Container(
@@ -206,6 +206,48 @@ class TemukanPage extends StatelessWidget {
                       name: "Wisata",
                     ),
                   ],
+                ),
+              ),
+              ////////////////////////
+              Container(
+                margin: EdgeInsets.symmetric(
+                  vertical: deviceHeight * 0.025,
+                ),
+                padding: EdgeInsets.symmetric(horizontal: deviceWidth * 0.06),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Video Pembelajaran",
+                      style: blackTextStyle.copyWith(
+                        fontSize: deviceWidth * 0.045,
+                        fontWeight: extraBold,
+                      ),
+                    ),
+                    SizedBox(
+                      height: deviceHeight * 0.025,
+                    ),
+                    Text(
+                      "Pelajari vidio pembelajaran bahasa daerah\nterkini dari komunitas bahasa",
+                      style: blackTextStyle.copyWith(
+                        fontSize: deviceWidth * 0.03,
+                        fontWeight: semiBold,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.only(left: deviceWidth * 0.06),
+                width: deviceWidth,
+                child: const SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: <Widget>[
+                      VideoContainerWidget(),
+                      VideoContainerWidget(),
+                    ],
+                  ),
                 ),
               )
             ],

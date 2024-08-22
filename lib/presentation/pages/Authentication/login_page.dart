@@ -2,6 +2,7 @@ import 'package:derana_multipart/presentation/pages/beranda/tab_page.dart';
 import 'package:derana_multipart/presentation/shared/const.dart';
 import 'package:derana_multipart/presentation/shared/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../shared/auth_custom_textfield.dart';
 import '../../shared/footer_auth_widget.dart';
@@ -81,9 +82,13 @@ class _LoginPageState extends State<LoginPage> {
           ],
         ),
         GestureDetector(
-          onTap: () {
+          onTap: () async {
             if (email.text == "admin@gmail.com" &&
                 password.text == "password") {
+              final SharedPreferences pref =
+                  await SharedPreferences.getInstance();
+
+              await pref.setBool('login', true);
               Navigator.of(context).pushNamed(TabPage.routeName);
             }
           },
@@ -155,7 +160,10 @@ class OtherLogin extends StatelessWidget {
             width: deviceWidth * 0.05, // Lebar ikon
             height: deviceHeight * 0.05, // Tinggi ikon
           ),
-          Text(label)
+          Text(
+            label,
+            style: blackTextStyle,
+          )
         ],
       ),
     );

@@ -1,15 +1,47 @@
 import 'package:derana_multipart/presentation/shared/const.dart';
 import 'package:derana_multipart/presentation/shared/theme.dart';
 import 'package:flutter/material.dart';
-import 'package:percent_indicator/percent_indicator.dart';
 
 import '../../shared/feature_widget.dart';
-import '../../shared/flying_row_widget.dart';
 import '../../shared/video_container_widget.dart';
 
-class BerandaPage extends StatelessWidget {
+class BerandaPage extends StatefulWidget {
   const BerandaPage({super.key});
   static const routeName = "/berandaPage";
+
+  @override
+  State<BerandaPage> createState() => _BerandaPageState();
+}
+
+class _BerandaPageState extends State<BerandaPage> {
+  final ScrollController _scrollController = ScrollController();
+  double _currentPadding = 0.09; // Padding awal 9% dari lebar layar
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _scrollController.addListener(() {
+      // Ketika scroll, periksa posisinya
+      if (_scrollController.offset > 0) {
+        // Jika scroll sudah dilakukan, hilangkan padding
+        setState(() {
+          _currentPadding = 0;
+        });
+      } else {
+        // Jika belum di-scroll, padding kembali ke nilai awal
+        setState(() {
+          _currentPadding = 0.09;
+        });
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -29,11 +61,11 @@ class BerandaPage extends StatelessWidget {
                     children: [
                       Container(
                         padding: EdgeInsets.only(
-                          top: deviceHeight * 0.07,
+                          top: deviceHeight * 0.06,
                           left: deviceWidth * 0.1,
                         ),
                         width: deviceWidth,
-                        height: deviceHeight * 0.25,
+                        height: deviceHeight * 0.2,
                         decoration: const BoxDecoration(
                           color: Color.fromRGBO(147, 227, 255, 1.0),
                           image: DecorationImage(
@@ -56,9 +88,6 @@ class BerandaPage extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(
-                              height: deviceHeight * 0.01,
-                            ),
                             Container(
                               width: deviceWidth * 0.26,
                               height: deviceHeight * 0.03,
@@ -76,12 +105,11 @@ class BerandaPage extends StatelessWidget {
                                   style: whiteTextStyle,
                                 ),
                               ),
-                            )
+                            ),
                           ],
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.only(top: deviceHeight * 0.12),
                         padding: EdgeInsets.symmetric(
                           horizontal: deviceWidth * 0.075,
                         ),
@@ -89,6 +117,40 @@ class BerandaPage extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
+                            Container(
+                              margin: EdgeInsets.symmetric(
+                                  vertical: deviceHeight * 0.02),
+                              width: deviceWidth,
+                              decoration: BoxDecoration(
+                                color: primaryColor,
+                                borderRadius: BorderRadius.circular(15),
+                              ),
+                              padding: EdgeInsets.symmetric(
+                                horizontal: deviceWidth * 0.01,
+                                vertical: deviceHeight * 0.01,
+                              ),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: <Widget>[
+                                  Text(
+                                    "Bantu melengkapi bahasa daerahmu",
+                                    style: whiteTextStyle,
+                                  ),
+                                  CircleAvatar(
+                                    backgroundColor: whiteColor,
+                                    radius: deviceWidth * 0.03,
+                                    child: Icon(
+                                      Icons.arrow_forward_rounded,
+                                      color: primaryColor,
+                                      size: deviceWidth * 0.05,
+                                      weight: .2,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
                             const Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
@@ -126,7 +188,7 @@ class BerandaPage extends StatelessWidget {
                                 ),
                                 FeatureWidget(
                                   image: "buku",
-                                  name: "Buku ",
+                                  name: "Buku Digital",
                                 ),
                                 FeatureWidget(
                                   image: "lainnya",
@@ -175,11 +237,13 @@ class BerandaPage extends StatelessWidget {
                         height: deviceHeight * 0.02,
                       ),
                       Container(
-                        padding: EdgeInsets.only(left: deviceWidth * 0.09),
+                        padding: EdgeInsets.only(
+                            left: deviceWidth * _currentPadding),
                         width: deviceWidth,
-                        child: const SingleChildScrollView(
+                        child: SingleChildScrollView(
+                          controller: _scrollController,
                           scrollDirection: Axis.horizontal,
-                          child: Row(
+                          child: const Row(
                             children: <Widget>[
                               VideoContainerWidget(),
                               VideoContainerWidget(),
@@ -239,77 +303,6 @@ class BerandaPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                Positioned(
-                  top: deviceHeight * 0.274,
-                  left: deviceWidth * 0.05,
-                  right: deviceWidth * 0.05,
-                  child: Container(
-                    width: deviceWidth * 0.5,
-                    height: deviceHeight * 0.13,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    child: Column(
-                      children: <Widget>[
-                        Padding(
-                          padding: EdgeInsets.symmetric(
-                            horizontal: deviceHeight * 0.01,
-                            vertical: deviceHeight * 0.02,
-                          ),
-                          child: const Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            children: <Widget>[
-                              FlyingRowWidget(
-                                image: "trophy",
-                                title: "Kelas",
-                                subtitle: "Pemula",
-                              ),
-                              FlyingRowWidget(
-                                image: "coin",
-                                title: "Koin",
-                                subtitle: "0",
-                              ),
-                              FlyingRowWidget(
-                                image: "voucher",
-                                title: "Voucher",
-                                subtitle: "32",
-                              ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: primaryColor,
-                              borderRadius: const BorderRadius.only(
-                                bottomLeft: Radius.circular(15),
-                                bottomRight: Radius.circular(15),
-                              ),
-                            ),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: <Widget>[
-                                Icon(
-                                  Icons.account_circle,
-                                  color: whiteColor,
-                                ),
-                                Text(
-                                  "Sambungin akun kamu sekarang, Yuk!",
-                                  style: whiteTextStyle,
-                                ),
-                                Icon(
-                                  Icons.chevron_right,
-                                  color: whiteColor,
-                                )
-                              ],
-                            ),
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                )
               ],
             ),
           ),
@@ -336,9 +329,15 @@ class OvalTextWidget extends StatelessWidget {
       ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(width: 1),
+        border: Border.all(
+            width: 1.5, color: const Color.fromRGBO(232, 232, 232, 1.0)),
       ),
-      child: Center(child: Text(name)),
+      child: Center(
+        child: Text(
+          name,
+          style: blackTextStyle,
+        ),
+      ),
     );
   }
 }

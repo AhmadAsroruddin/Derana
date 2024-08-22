@@ -15,13 +15,14 @@ class FeatureWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      width: deviceWidth * 0.15,
+      width: deviceWidth * 0.18,
       height: deviceHeight * 0.11,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           CircleAvatar(
+            backgroundColor: whiteColor,
             backgroundImage: AssetImage(
               "assets/image/$image.png",
             ),

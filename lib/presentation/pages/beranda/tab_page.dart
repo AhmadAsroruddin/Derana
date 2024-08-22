@@ -1,5 +1,6 @@
 import 'package:derana_multipart/presentation/pages/belajar/belajar_page.dart';
 import 'package:derana_multipart/presentation/pages/beranda/beranda_page.dart';
+import 'package:derana_multipart/presentation/pages/obrolan/obrolan_page.dart';
 import 'package:derana_multipart/presentation/pages/temukan/temukan_page.dart';
 import 'package:derana_multipart/presentation/shared/theme.dart';
 import 'package:flutter/material.dart';
@@ -23,37 +24,51 @@ class _TabPageState extends State<TabPage> {
     _pages = [
       const BerandaPage(),
       const BelajarPage(),
-      const TemukanPage(), // Halaman ketiga, bisa diubah sesuai kebutuhan
+      const TemukanPage(),
+      const ObrolanPage() // Halaman ketiga, bisa diubah sesuai kebutuhan
     ];
   }
 
   @override
   Widget build(BuildContext context) {
-    return PersistentTabView(
-      context,
-      screens: _pages, // Menggunakan List<Widget>
-      items: [
-        PersistentBottomNavBarItem(
-          icon: const Icon(Icons.home_filled),
-          title: "Home",
-          activeColorPrimary: primaryColor,
-          inactiveColorPrimary: Colors.grey,
+    return SafeArea(
+      bottom: true,
+      top: false,
+      child: Container(
+        color: whiteColor,
+        child: PersistentTabView(
+          context,
+          screens: _pages, // Menggunakan List<Widget>
+          items: [
+            PersistentBottomNavBarItem(
+              icon: const Icon(Icons.home_rounded),
+              title: "Beranda",
+              activeColorPrimary: primaryColor,
+              inactiveColorPrimary: Colors.grey,
+            ),
+            PersistentBottomNavBarItem(
+              icon: const Icon(FontAwesomeIcons.bookOpen),
+              title: "Belajar",
+              activeColorPrimary: primaryColor,
+              inactiveColorPrimary: Colors.grey,
+            ),
+            PersistentBottomNavBarItem(
+              icon: const Icon(Icons.explore),
+              title: "Temukan",
+              activeColorPrimary: primaryColor,
+              inactiveColorPrimary: Colors.grey,
+            ),
+            PersistentBottomNavBarItem(
+              icon: const Icon(Icons.explore),
+              title: "Obrolan",
+              activeColorPrimary: primaryColor,
+              inactiveColorPrimary: Colors.grey,
+            ),
+          ],
+          navBarStyle: NavBarStyle.style3, // Menggunakan style 3
+          backgroundColor: whiteColor, // Warna latar belakang
         ),
-        PersistentBottomNavBarItem(
-          icon: const Icon(FontAwesomeIcons.bookOpen),
-          title: "Belajar",
-          activeColorPrimary: primaryColor,
-          inactiveColorPrimary: Colors.grey,
-        ),
-        PersistentBottomNavBarItem(
-          icon: const Icon(Icons.explore),
-          title: "Temukan",
-          activeColorPrimary: primaryColor,
-          inactiveColorPrimary: Colors.grey,
-        ),
-      ],
-      navBarStyle: NavBarStyle.style3, // Menggunakan style 3
-      backgroundColor: whiteColor, // Warna latar belakang
+      ),
     );
   }
 }

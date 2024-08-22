@@ -1,5 +1,7 @@
+import 'package:derana_multipart/presentation/bloc/routes/route_cubit.dart';
 import 'package:derana_multipart/presentation/pages/Authentication/auth_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -199,6 +201,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                 GestureDetector(
                   onTap: () {
                     Navigator.of(context).pushNamed(AuthPage.routeName);
+                    context.read<RouteCubit>().firstTimeDone();
                   },
                   child: Text(
                     "Daftar di sini",
