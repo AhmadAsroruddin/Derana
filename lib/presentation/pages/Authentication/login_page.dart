@@ -57,6 +57,9 @@ class _LoginPageState extends State<LoginPage> {
                         isChecked = value ?? false;
                       });
                     },
+                    side: MaterialStateBorderSide.resolveWith(
+                      (states) => BorderSide(width: 1.0, color: Colors.black),
+                    ),
                   ),
                 ),
                 SizedBox(
@@ -96,7 +99,9 @@ class _LoginPageState extends State<LoginPage> {
                 child: Text(
                   "Masuk",
                   style: whiteTextStyle.copyWith(
-                      fontWeight: semiBold, fontSize: deviceWidth * 0.04),
+                    fontWeight: semiBold,
+                    fontSize: deviceWidth * 0.04,
+                  ),
                 ),
               ),
             ),
@@ -155,7 +160,10 @@ class OtherLogin extends StatelessWidget {
             width: deviceWidth * 0.05, // Lebar ikon
             height: deviceHeight * 0.05, // Tinggi ikon
           ),
-          Text(label)
+          Text(
+            label,
+            style: TextStyle(color: Color(0xff9B9B9B)),
+          )
         ],
       ),
     );

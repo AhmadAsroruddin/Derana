@@ -68,7 +68,7 @@ class _AuthPageState extends State<AuthPage>
                       "Nikmati pengalaman baru menjelajah fitur dan\nlayanan bahasa daerah di sini.",
                       style: whiteTextStyle.copyWith(
                         fontWeight: bold,
-                        fontSize: deviceWidth * 0.03,
+                        fontSize: deviceWidth * 0.035,
                       ),
                     ),
                   ],
@@ -94,7 +94,7 @@ class _AuthPageState extends State<AuthPage>
                           horizontal: deviceWidth * 0.01, // Adjusted padding
                           vertical: deviceHeight * 0.005),
                       decoration: BoxDecoration(
-                        color: const Color.fromRGBO(230, 230, 230, 1),
+                        color: const Color.fromARGB(255, 241, 241, 241),
                         borderRadius: BorderRadius.circular(50),
                       ),
                       height: deviceHeight * 0.06,
@@ -102,6 +102,10 @@ class _AuthPageState extends State<AuthPage>
                         controller: _tabController,
                         labelColor: blackColor,
                         unselectedLabelColor: blackColor, // Optional
+                        labelStyle: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                        ),
                         indicator: BoxDecoration(
                           borderRadius: BorderRadius.circular(
                               50), // Adjusted borderRadius

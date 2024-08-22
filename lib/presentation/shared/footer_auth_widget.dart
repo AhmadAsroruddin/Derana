@@ -11,9 +11,10 @@ class FooterAuth extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Center(
+        Center(
           child: Text(
             "Dengan masuk atau mendaftar, kamu menyetujui",
+            style: blackTextStyle.copyWith(fontWeight: regular),
           ),
         ),
         Row(
@@ -21,15 +22,15 @@ class FooterAuth extends StatelessWidget {
           children: <Widget>[
             Text(
               "Ketentuan layanan ",
-              style: blueTextStyle,
+              style: blueTextStyle.copyWith(fontWeight: regular),
             ),
             Text(
               " dan ",
-              style: lightGreyTextStyle,
+              style: blackTextStyle.copyWith(fontWeight: regular),
             ),
             Text(
               " Kebijakan Privasi",
-              style: blueTextStyle,
+              style: blueTextStyle.copyWith(fontWeight: regular),
             ),
           ],
         ),

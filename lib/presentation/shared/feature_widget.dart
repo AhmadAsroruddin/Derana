@@ -14,7 +14,7 @@ class FeatureWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: deviceWidth * 0.15,
+      width: deviceWidth * 0.18,
       height: deviceHeight * 0.11,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -24,7 +24,7 @@ class FeatureWidget extends StatelessWidget {
             backgroundImage: AssetImage(
               "assets/image/$image.png",
             ),
-            radius: deviceWidth * 0.07,
+            radius: deviceWidth * 0.075,
           ),
           Text(
             name,

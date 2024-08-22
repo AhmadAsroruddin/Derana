@@ -82,7 +82,7 @@ class BerandaPage extends StatelessWidget {
                       Container(
                         margin: EdgeInsets.only(top: deviceHeight * 0.05),
                         padding: EdgeInsets.symmetric(
-                          horizontal: deviceWidth * 0.075,
+                          horizontal: deviceWidth * 0.065,
                         ),
                         width: deviceWidth,
                         child: Column(

@@ -35,14 +35,17 @@ class AuthCustomTextField extends StatelessWidget {
             size: deviceWidth * 0.07,
             color: blueColor,
           ),
-          title: Text(
-            label,
-            style: const TextStyle(color: Color.fromRGBO(109, 109, 109, 1.0)),
-          ),
-          subtitle: TextField(
+          title: TextFormField(
             obscureText: isPassword,
             controller: controller,
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
+              labelText: label,
+              labelStyle: TextStyle(
+                color: anotherGrey,
+                fontSize: deviceWidth * 0.04,
+              ),
+              floatingLabelBehavior: FloatingLabelBehavior
+                  .auto, // Pindahkan label ke atas saat fokus
               border: InputBorder.none,
               contentPadding: EdgeInsets.zero,
               isDense: true,
