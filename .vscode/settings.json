@@ -1,3 +1,7 @@
 {
+<<<<<<< HEAD
+    "java.configuration.updateBuildConfiguration": "automatic"
+=======
     "cmake.sourceDirectory": "D:/amrin/Derana/Derana/linux"
+>>>>>>> 456cb03b5263c64b0f13cc754d0c61e479ba9535
 }

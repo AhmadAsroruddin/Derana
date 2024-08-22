@@ -4,6 +4,7 @@ import 'package:derana_multipart/presentation/pages/beranda/beranda_page.dart';
 import 'package:derana_multipart/presentation/pages/beranda/tab_page.dart';
 import 'package:derana_multipart/presentation/pages/onboarding_page.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class MyRouterDelegate extends RouterDelegate
     with ChangeNotifier, PopNavigatorRouterDelegateMixin {
@@ -17,9 +18,13 @@ class MyRouterDelegate extends RouterDelegate
   bool? isFirstTime;
   final RouteCubit routeCubit;
   List<Page> historyStack = [];
+  bool? isLogin = false;
 
   Future<void> _init() async {
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
+    final data = prefs.getBool('login');
     isFirstTime = routeCubit.isFirstTime();
+    isLogin = data;
     notifyListeners();
   }
 
@@ -36,7 +41,7 @@ class MyRouterDelegate extends RouterDelegate
     } else if (isFirstTime == true) {
       historyStack = _splashStack;
     } else {
-      historyStack = _loggedOutStack;
+      historyStack = _loggedInStack;
     }
 
     return Navigator(
@@ -78,5 +83,6 @@ class MyRouterDelegate extends RouterDelegate
   }
 
   List<Page> get _splashStack => [const MaterialPage(child: OnboardingPage())];
-  List<Page> get _loggedOutStack => [];
+  List<Page> get _loggedOutStack => [const MaterialPage(child: TabPage())];
+  List<Page> get _loggedInStack => [const MaterialPage(child: AuthPage())];
 }

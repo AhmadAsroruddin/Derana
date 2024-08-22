@@ -1,5 +1,4 @@
-import 'package:derana_multipart/presentation/shared/const.dart';
-import 'package:derana_multipart/presentation/shared/theme.dart';
+import 'package:derana_multipart/presentation/shared/header_tab_widget.dart';
 import 'package:flutter/material.dart';
 
 import 'middle_card_belajar.dart';
@@ -10,35 +9,26 @@ class BelajarPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final deviceSize = MediaQuery.of(context).size;
+
     return Scaffold(
-      backgroundColor: whiteColor,
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
-            Container(
-              padding: EdgeInsets.symmetric(
-                horizontal: deviceWidth * 0.06,
-              ),
-              width: deviceWidth,
-              height: deviceHeight * 0.06,
-              decoration: const BoxDecoration(
-                border: BorderDirectional(
-                  bottom: BorderSide(width: .2),
-                ),
-              ),
-              child: Text(
-                "Belajar",
-                style: blackTextStyle.copyWith(
-                  fontWeight: bold,
-                  fontSize: deviceWidth * 0.06,
-                ),
-              ),
+            const HeaderTabWidget(title: "Belajar"),
+            SizedBox(
+              height: deviceSize.height * 0.01,
             ),
             Container(
-              padding: EdgeInsets.only(left: deviceWidth * .06),
-              height: deviceHeight * 0.16,
-              width: deviceWidth,
+              padding: EdgeInsets.only(
+                left: deviceSize.width * .06,
+                top: deviceSize.height * 0.005,
+                bottom: deviceSize.height * 0.01,
+              ),
+              width: deviceSize.width,
               child: const SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -47,7 +37,7 @@ class BelajarPage extends StatelessWidget {
                     TopCardBelajar(
                       color: Colors.blue,
                       title: "718",
-                      subtitle: "Bahasa Daerah",
+                      subtitle: "Bahasa",
                     ),
                     TopCardBelajar(
                       color: Colors.orange,
@@ -59,48 +49,44 @@ class BelajarPage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(left: deviceWidth * 0.06),
+              padding: EdgeInsets.only(left: deviceSize.width * 0.06),
               child: Text(
                 "Akses Mudah",
-                style: blackTextStyle.copyWith(
-                  fontSize: deviceWidth * 0.045,
-                  fontWeight: bold,
+                style: TextStyle(
+                  fontSize: deviceSize.width * 0.045,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
                 ),
               ),
             ),
-            SizedBox(
-              height: deviceHeight * 0.03,
-            ),
             Padding(
-              padding: EdgeInsets.only(left: deviceWidth * 0.06),
-              child: Text(
+              padding: EdgeInsets.only(left: deviceSize.width * 0.06),
+              child: const Text(
                 "Belajar cepat dan mudah dengan memilih\nmenu di bawah ini",
-                style: blackTextStyle,
+                style: TextStyle(color: Colors.black),
               ),
             ),
-            SizedBox(
-              height: deviceHeight * 0.01,
-            ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: deviceWidth * 0.06),
+              padding:
+                  EdgeInsets.symmetric(horizontal: deviceSize.width * 0.06),
               child: SizedBox(
-                width: deviceWidth,
-                height: deviceHeight * 0.2,
-                child: Row(
+                width: deviceSize.width,
+                height: deviceSize.height * 0.15,
+                child: const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    const MiddleCardBelajar(
+                    MiddleCardBelajar(
                       color: Colors.blue,
                       image: "toga",
                       title: "Materi",
                     ),
-                    const MiddleCardBelajar(
+                    MiddleCardBelajar(
                       color: Colors.orange,
                       image: "kartu_kata",
                       title: "Kartu Kata",
                     ),
                     MiddleCardBelajar(
-                      color: greenColor,
+                      color: Colors.green,
                       image: "phrase",
                       title: "Phrasebook",
                     ),
@@ -110,45 +96,46 @@ class BelajarPage extends StatelessWidget {
             ),
             Container(
               padding: EdgeInsets.only(
-                left: deviceWidth * 0.06,
-                top: deviceHeight * 0.01,
+                left: deviceSize.width * 0.06,
+                top: deviceSize.height * 0.01,
               ),
               child: Text(
                 "Bahasa daerah berdasarkan provinsi",
-                style: blackTextStyle.copyWith(
-                  fontWeight: bold,
-                  fontSize: deviceWidth * 0.045,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: deviceSize.width * 0.045,
+                  color: Colors.black,
                 ),
               ),
             ),
             SizedBox(
-              height: deviceHeight * 0.02,
+              height: deviceSize.height * 0.01,
             ),
             Padding(
               padding: EdgeInsets.only(
-                left: deviceWidth * 0.06,
+                left: deviceSize.width * 0.06,
+                bottom: deviceSize.height * 0.01,
               ),
               child: Text(
                 "Temukan bahasa daerah yang ingin kamu\npelajari berdasarkan provinsi di Indonesia",
-                style: blackTextStyle.copyWith(
-                  fontSize: deviceWidth * 0.037,
+                style: TextStyle(
+                  fontSize: deviceSize.width * 0.037,
+                  color: Colors.black,
                 ),
               ),
             ),
-            Expanded(
-              child: Padding(
-                padding: EdgeInsets.only(
-                  left: deviceWidth * 0.06,
-                ),
-                child: SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    children: <Widget>[
-                      ProvinceCard(),
-                      ProvinceCard(),
-                      ProvinceCard()
-                    ],
-                  ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: deviceSize.width * 0.06,
+              ),
+              child: const SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: <Widget>[
+                    ProvinceCard(),
+                    ProvinceCard(),
+                    ProvinceCard()
+                  ],
                 ),
               ),
             )
@@ -166,12 +153,14 @@ class ProvinceCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final deviceSize = MediaQuery.of(context).size;
+
     return Container(
-      width: deviceWidth * 0.35,
-      height: deviceHeight * 0.18,
-      margin: EdgeInsets.only(right: deviceWidth * 0.05),
+      width: deviceSize.width * 0.35,
+      height: deviceSize.height * 0.2,
+      margin: EdgeInsets.only(right: deviceSize.width * 0.05),
       decoration: BoxDecoration(
-        border: Border.all(width: .5),
+        border: Border.all(width: .2),
         borderRadius: BorderRadius.circular(
           15,
         ),
@@ -179,9 +168,9 @@ class ProvinceCard extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            width: deviceWidth * 0.35,
-            height: deviceHeight * 0.13,
-            padding: EdgeInsets.symmetric(vertical: deviceHeight * 0.01),
+            width: deviceSize.width * 0.35,
+            height: deviceSize.height * 0.15,
+            padding: EdgeInsets.symmetric(vertical: deviceSize.height * 0.01),
             child: Center(
               child: Image.asset(
                 "assets/image/jakarta.png",
@@ -190,12 +179,12 @@ class ProvinceCard extends StatelessWidget {
             ),
           ),
           Container(
-            width: deviceWidth * 0.35,
-            padding: EdgeInsets.only(left: deviceWidth * 0.05),
-            decoration: BoxDecoration(
+            width: deviceSize.width * 0.35,
+            padding: EdgeInsets.only(left: deviceSize.width * 0.05),
+            decoration: const BoxDecoration(
                 border: BorderDirectional(
               top: BorderSide(
-                width: .5,
+                width: .2,
               ),
             )),
             child: Column(
@@ -203,15 +192,17 @@ class ProvinceCard extends StatelessWidget {
               children: <Widget>[
                 Text(
                   "Jakarta",
-                  style: blackTextStyle.copyWith(
-                    fontWeight: bold,
-                    fontSize: deviceWidth * 0.04,
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: deviceSize.width * 0.04,
+                    color: Colors.black,
                   ),
                 ),
                 Text(
                   "Jawa",
-                  style: blackTextStyle.copyWith(
-                    fontSize: deviceWidth * 0.03,
+                  style: TextStyle(
+                    fontSize: deviceSize.width * 0.03,
+                    color: Colors.black,
                   ),
                 ),
               ],

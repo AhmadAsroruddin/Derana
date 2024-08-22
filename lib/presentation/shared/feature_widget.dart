@@ -14,13 +14,14 @@ class FeatureWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: deviceWidth * 0.18,
+      width: deviceWidth * 0.15,
       height: deviceHeight * 0.11,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           CircleAvatar(
+            backgroundColor: whiteColor,
             backgroundImage: AssetImage(
               "assets/image/$image.png",
             ),
