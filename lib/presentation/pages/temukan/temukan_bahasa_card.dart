@@ -48,6 +48,7 @@ class TemukanBahasaCard extends StatelessWidget {
             "Klik untuk detail",
             style: blackTextStyle.copyWith(
               fontStyle: FontStyle.italic,
+              fontSize: 12.5,
             ),
           ),
           LinearPercentIndicator(

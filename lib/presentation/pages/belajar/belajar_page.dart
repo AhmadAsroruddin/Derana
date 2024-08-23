@@ -63,7 +63,8 @@ class BelajarPage extends StatelessWidget {
               padding: EdgeInsets.only(left: deviceSize.width * 0.06),
               child: const Text(
                 "Belajar cepat dan mudah dengan memilih\nmenu di bawah ini",
-                style: TextStyle(color: Colors.black),
+                style:
+                    TextStyle(color: Colors.black, fontWeight: FontWeight.w400),
               ),
             ),
             Padding(
@@ -108,9 +109,6 @@ class BelajarPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
-              height: deviceSize.height * 0.01,
-            ),
             Padding(
               padding: EdgeInsets.only(
                 left: deviceSize.width * 0.06,
@@ -119,9 +117,9 @@ class BelajarPage extends StatelessWidget {
               child: Text(
                 "Temukan bahasa daerah yang ingin kamu\npelajari berdasarkan provinsi di Indonesia",
                 style: TextStyle(
-                  fontSize: deviceSize.width * 0.037,
-                  color: Colors.black,
-                ),
+                    fontSize: deviceSize.width * 0.037,
+                    color: Colors.black,
+                    fontWeight: FontWeight.w300),
               ),
             ),
             Padding(
@@ -132,9 +130,34 @@ class BelajarPage extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: <Widget>[
-                    ProvinceCard(),
-                    ProvinceCard(),
-                    ProvinceCard()
+                    ProvinceCard(
+                      logoPath: "jakarta",
+                      provinceName: "DKI Jakarta",
+                      pulauName: "Jawa",
+                    ),
+                    ProvinceCard(
+                      logoPath: "jabar",
+                      provinceName: "Jawa Barat",
+                      pulauName: "Jawa",
+                    ),
+                    ProvinceCard(
+                        logoPath: "jatim",
+                        provinceName: "Jawa Timur",
+                        pulauName: "Jawa"),
+                    ProvinceCard(
+                      logoPath: "jateng",
+                      provinceName: "Jawa Tengah",
+                      pulauName: "Jawa",
+                    ),
+                    ProvinceCard(
+                      logoPath: "banten",
+                      provinceName: "Banten",
+                      pulauName: "Banten",
+                    ),
+                    ProvinceCard(
+                        logoPath: "aceh",
+                        provinceName: "Aceh",
+                        pulauName: "Sumatera")
                   ],
                 ),
               ),
@@ -147,8 +170,15 @@ class BelajarPage extends StatelessWidget {
 }
 
 class ProvinceCard extends StatelessWidget {
+  final String logoPath;
+  final String provinceName;
+  final String pulauName;
+
   const ProvinceCard({
     super.key,
+    required this.logoPath,
+    required this.provinceName,
+    required this.pulauName,
   });
 
   @override
@@ -161,9 +191,7 @@ class ProvinceCard extends StatelessWidget {
       margin: EdgeInsets.only(right: deviceSize.width * 0.05),
       decoration: BoxDecoration(
         border: Border.all(width: .2),
-        borderRadius: BorderRadius.circular(
-          15,
-        ),
+        borderRadius: BorderRadius.circular(15),
       ),
       child: Column(
         children: [
@@ -173,7 +201,7 @@ class ProvinceCard extends StatelessWidget {
             padding: EdgeInsets.symmetric(vertical: deviceSize.height * 0.01),
             child: Center(
               child: Image.asset(
-                "assets/image/jakarta.png",
+                "assets/image/$logoPath.png",
                 scale: 1,
               ),
             ),
@@ -182,16 +210,17 @@ class ProvinceCard extends StatelessWidget {
             width: deviceSize.width * 0.35,
             padding: EdgeInsets.only(left: deviceSize.width * 0.05),
             decoration: const BoxDecoration(
-                border: BorderDirectional(
-              top: BorderSide(
-                width: .2,
+              border: BorderDirectional(
+                top: BorderSide(
+                  width: .2,
+                ),
               ),
-            )),
+            ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  "Jakarta",
+                  provinceName,
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: deviceSize.width * 0.04,
@@ -199,7 +228,7 @@ class ProvinceCard extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "Jawa",
+                  pulauName,
                   style: TextStyle(
                     fontSize: deviceSize.width * 0.03,
                     color: Colors.black,

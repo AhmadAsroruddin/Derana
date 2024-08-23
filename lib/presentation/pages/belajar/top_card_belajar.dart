@@ -48,7 +48,8 @@ class TopCardBelajar extends StatelessWidget {
             lineHeight: 8.0,
             percent: 1,
             progressColor: color,
-          )
+            barRadius: Radius.circular(16),
+          ),
         ],
       ),
     );

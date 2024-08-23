@@ -27,7 +27,7 @@ class HeaderTabWidget extends StatelessWidget {
       child: Text(
         title,
         style: blackTextStyle.copyWith(
-          fontWeight: bold,
+          fontWeight: FontWeight.bold,
           fontSize: deviceWidth * 0.05,
         ),
       ),
