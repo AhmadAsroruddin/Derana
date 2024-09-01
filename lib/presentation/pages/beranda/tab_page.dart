@@ -25,7 +25,7 @@ class _TabPageState extends State<TabPage> {
       const BerandaPage(),
       const BelajarPage(),
       const TemukanPage(),
-      const ObrolanPage() // Halaman ketiga, bisa diubah sesuai kebutuhan
+      const ObrolanPage()
     ];
   }
 
@@ -38,6 +38,7 @@ class _TabPageState extends State<TabPage> {
         color: whiteColor,
         child: PersistentTabView(
           context,
+          stateManagement: false,
           screens: _pages, // Menggunakan List<Widget>
           items: [
             PersistentBottomNavBarItem(

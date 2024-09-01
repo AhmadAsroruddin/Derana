@@ -198,7 +198,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                     fontSize: deviceWidth * 0.035,
                   ),
                 ),
-                Padding(padding: EdgeInsets.only(left: 8.0)),
+                const Padding(padding: EdgeInsets.only(left: 8.0)),
                 GestureDetector(
                   onTap: () {
                     Navigator.of(context).pushNamed(AuthPage.routeName);

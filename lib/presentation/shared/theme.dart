@@ -36,6 +36,12 @@ TextStyle blueTextStyle = GoogleFonts.openSans(
 TextStyle greenTextStyle = GoogleFonts.openSans(
   color: greenColor,
 );
+TextStyle greyFormTextStyle = GoogleFonts.openSans(
+  color: const Color.fromRGBO(117, 117, 117, 1),
+);
+TextStyle greyIsiDataTextStyle = GoogleFonts.openSans(
+  color: const Color.fromRGBO(109, 109, 109, 1),
+);
 
 FontWeight light = FontWeight.w300;
 FontWeight regular = FontWeight.w400;
