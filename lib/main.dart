@@ -1,4 +1,5 @@
 import 'package:derana_multipart/presentation/bloc/routes/route_cubit.dart';
+import 'package:derana_multipart/presentation/pages/form/isi_formulir_page.dart';
 import 'package:derana_multipart/presentation/routes/router_delegate.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -40,8 +41,12 @@ class _MyAppState extends State<MyApp> {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
+        routes: {
+          IsiFormulirPage.routeName: (context) => const IsiFormulirPage(),
+        },
         home: Router(
           routerDelegate: myRouterDelegate,
+          backButtonDispatcher: RootBackButtonDispatcher(),
         ),
       ),
     );

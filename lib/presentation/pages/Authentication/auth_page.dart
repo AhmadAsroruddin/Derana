@@ -102,7 +102,7 @@ class _AuthPageState extends State<AuthPage>
                         controller: _tabController,
                         labelColor: blackColor,
                         unselectedLabelColor: blackColor, // Optional
-                        labelStyle: TextStyle(
+                        labelStyle: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w500,
                         ),

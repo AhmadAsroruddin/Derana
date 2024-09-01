@@ -1,6 +1,8 @@
+import 'package:derana_multipart/presentation/pages/form/form_page.dart';
 import 'package:derana_multipart/presentation/shared/const.dart';
 import 'package:derana_multipart/presentation/shared/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 
 import '../../shared/feature_widget.dart';
 import '../../shared/video_container_widget.dart';
@@ -22,14 +24,11 @@ class _BerandaPageState extends State<BerandaPage> {
     // TODO: implement initState
     super.initState();
     _scrollController.addListener(() {
-      // Ketika scroll, periksa posisinya
       if (_scrollController.offset > 0) {
-        // Jika scroll sudah dilakukan, hilangkan padding
         setState(() {
           _currentPadding = 0;
         });
       } else {
-        // Jika belum di-scroll, padding kembali ke nilai awal
         setState(() {
           _currentPadding = 0.09;
         });
@@ -138,14 +137,25 @@ class _BerandaPageState extends State<BerandaPage> {
                                     "Bantu melengkapi bahasa daerahmu",
                                     style: whiteTextStyle,
                                   ),
-                                  CircleAvatar(
-                                    backgroundColor: whiteColor,
-                                    radius: deviceWidth * 0.03,
-                                    child: Icon(
-                                      Icons.arrow_forward_rounded,
-                                      color: primaryColor,
-                                      size: deviceWidth * 0.05,
-                                      weight: .2,
+                                  GestureDetector(
+                                    onTap: () {
+                                      PersistentNavBarNavigator.pushNewScreen(
+                                        context,
+                                        screen: FormPage(),
+                                        withNavBar: false,
+                                        pageTransitionAnimation:
+                                            PageTransitionAnimation.cupertino,
+                                      );
+                                    },
+                                    child: CircleAvatar(
+                                      backgroundColor: whiteColor,
+                                      radius: deviceWidth * 0.03,
+                                      child: Icon(
+                                        Icons.arrow_forward_rounded,
+                                        color: primaryColor,
+                                        size: deviceWidth * 0.05,
+                                        weight: .2,
+                                      ),
                                     ),
                                   )
                                 ],
