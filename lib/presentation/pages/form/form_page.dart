@@ -5,9 +5,15 @@ import 'package:flutter/material.dart';
 
 import 'model_bottom_widget.dart';
 
-class FormPage extends StatelessWidget {
+class FormPage extends StatefulWidget {
   const FormPage({super.key});
   static const routeName = "/formPage";
+
+  @override
+  State<FormPage> createState() => _FormPageState();
+}
+
+class _FormPageState extends State<FormPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,7 +54,7 @@ class FormPage extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
-                      Container(
+                      SizedBox(
                         width: deviceWidth,
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
