@@ -1,0 +1,13 @@
+[
+  {"id": 1, "label": "SD/MI (Sederajat)"},
+  {"id": 2, "label": "SMP/MTs (Sederajat)"},
+  {"id": 3, "label": "SMA/SMK/MA (Sederajat"},
+  {"id": 4, "label": "D1 (Diploma 1)"},
+  {"id": 5, "label": "D2 (Diploma 2"},
+  {"id": 6, "label": "D3 (Diploma 3)"},
+  {"id": 7, "label": "D4 (Sarjana Terapan)"},
+  {"id": 8, "label": "S1 (Sarjana)"},
+  {"id": 9, "label": "S2 (Magister)"},
+  {"id": 10, "label": "S3 (Doktor)"}
+]
+

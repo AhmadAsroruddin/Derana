@@ -1,0 +1,6 @@
+[
+    {"id":1, "label" : "Banyak (>10 kali)"},
+    {"id":2, "label" : "Sering (<10 kali)"},
+    {"id":3, "label" : "Jarang (<5 kali)"},
+    {"id":4, "label" : "Tidak Pernah"}
+]
