@@ -10,7 +10,7 @@ class KondisiBahasaPage extends StatelessWidget {
       child: Container(
         width: deviceWidth,
         color: const Color.fromRGBO(0, 164, 222, .3),
-        child: Column(
+        child: const Column(
           children: <Widget>[
             Text("data"),
           ],
