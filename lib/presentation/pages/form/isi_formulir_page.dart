@@ -1,7 +1,9 @@
 import 'package:derana_multipart/presentation/pages/form/identitas/identitas_page.dart';
+import 'package:derana_multipart/presentation/providers/page_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
+import 'package:provider/provider.dart';
 
 import '../../shared/const.dart';
 import '../../shared/theme.dart';
@@ -18,8 +20,22 @@ class IsiFormulirPage extends StatefulWidget {
 class _IsiFormulirPageState extends State<IsiFormulirPage> {
   var currPage = "Identitas";
 
+  final List<String> dataList = [
+    "Geografis",
+    "Ekonomi",
+    "Media",
+    "Teknologi(Internet)",
+    "Regulasi dan Pemerintah",
+    "Pendidikan",
+    "Ranah Penggunaan",
+    "Dokumentasi",
+    "Penutur"
+  ];
+
   @override
   Widget build(BuildContext context) {
+    final pageProvider = Provider.of<KondisiBahasaPageProvider>(context);
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: lightBackgroundColor,
@@ -54,7 +70,7 @@ class _IsiFormulirPageState extends State<IsiFormulirPage> {
                         currPage == "Identitas"
                             ? lightBackgroundColor
                             : const Color.fromRGBO(
-                                0, 164, 222, .3), // Warna akhir
+                                0, 164, 222, .15), // Warna akhir
                       ],
                     ),
                   ),
@@ -208,11 +224,17 @@ class _IsiFormulirPageState extends State<IsiFormulirPage> {
                               vertical: deviceHeight * 0.01),
                           child: GestureDetector(
                             onTap: () {
-                              setState(() {
-                                // Aksi untuk tombol "Kembali"
-                                currPage =
-                                    "Identitas"; // Misalnya kembali ke halaman sebelumnya
-                              });
+                              if (currPage == "Kondisi Bahasa") {
+                                if (pageProvider.getIndex() == 0) {
+                                  setState(() {
+                                    // Aksi untuk tombol "Kembali"
+                                    currPage =
+                                        "Identitas"; // Misalnya kembali ke halaman sebelumnya
+                                  });
+                                } else {
+                                  pageProvider.backwardPage();
+                                }
+                              }
                             },
                             child: Container(
                               margin: EdgeInsets.only(
@@ -251,9 +273,13 @@ class _IsiFormulirPageState extends State<IsiFormulirPage> {
                             EdgeInsets.symmetric(vertical: deviceHeight * 0.01),
                         child: GestureDetector(
                           onTap: () {
-                            setState(() {
-                              currPage = "Kondisi Bahasa";
-                            });
+                            if (currPage == "Identitas") {
+                              setState(() {
+                                currPage = "Kondisi Bahasa";
+                              });
+                            } else if (currPage == "Kondisi Bahasa") {
+                              pageProvider.forwardPage();
+                            }
                           },
                           child: Container(
                             margin: EdgeInsets.symmetric(

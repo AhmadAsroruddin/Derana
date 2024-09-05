@@ -45,7 +45,7 @@ dependencies:
   percent_indicator: ^4.2.3
   persistent_bottom_nav_bar: ^6.2.1
   iconify_flutter: ^0.0.5
-
+  provider: ^6.1.2
 
 dev_dependencies:
   flutter_test:

@@ -1,8 +1,10 @@
 import 'package:derana_multipart/presentation/bloc/routes/route_cubit.dart';
 import 'package:derana_multipart/presentation/pages/form/isi_formulir_page.dart';
+import 'package:derana_multipart/presentation/providers/page_provider.dart';
 import 'package:derana_multipart/presentation/routes/router_delegate.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:provider/provider.dart';
 import './locator.dart' as di;
 
 void main() async {
@@ -30,9 +32,10 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MultiBlocProvider(
+    return MultiProvider(
       providers: [
         BlocProvider(create: (_) => di.locator<RouteCubit>()),
+        ChangeNotifierProvider(create: (context) => KondisiBahasaPageProvider())
       ],
       child: MaterialApp(
         title: 'Flutter Demo',
