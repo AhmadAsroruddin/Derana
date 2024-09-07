@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "type": "MC",
+        "question": "Apakah bahasa daerah kamu terdapat aksara atau tulisan?",
+        "answer": [
+            "Tidak Ada",
+            "Tidak Banyak",
+            "Cukup Banyak",
+            "Banyak",
+            "Sangat Banyak"
+        ]
+    },
+    {
+        "id": 2,
+        "type": "MC",
+        "question": "Sepengetahuanmu, apakah bahasa daerahmu memiliki buku tata bahasa yang telah disusun?",
+        "answer": [
+            "Tidak Ada",
+            "Tidak Banyak",
+            "Cukup Banyak",
+            "Banyak",
+            "Sangat Banyak"
+        ]
+    },
+    {
+        "id": 3,
+        "type": "MC",
+        "question": "Sepengetahuanmu, apakah bahasa daerahmu memiliki dokumentasi berupa rekaman suara dan gambar/video?",
+        "answer": [
+            "Tidak Ada",
+            "Tidak Banyak",
+            "Cukup Banyak",
+            "Banyak",
+            "Sangat Banyak"
+        ]
+    },
+    {
+        "id": 4,
+        "type": "MC",
+        "question": "Sepengetahuanmu, apakah terdapat dokumentasi bahasa daerahmu berupa sketsa gramatikal atau daftar kata?",
+        "answer": [
+            "Tidak Ada",
+            "Tidak Banyak",
+            "Cukup Banyak",
+            "Banyak",
+            "Sangat Banyak"
+        ]
+    }
+]

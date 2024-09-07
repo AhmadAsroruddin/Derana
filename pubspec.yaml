@@ -74,6 +74,7 @@ flutter:
     - assets/image/
     - assets/form/
     - assets/data/
+    - assets/data/kondisi_bahasa/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

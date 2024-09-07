@@ -1,0 +1,209 @@
+[
+    {
+        "id" : 1,
+        "type" : "MC",
+        "question" : "Apakah kamu mempunyai media sosial daring/online (Facebook, X, WhatsApp, Instagram, dan sejenisnya)?",
+        "answer":[
+            "Ya",
+            "Tidak"
+        ]
+    },
+    {
+        "id" : 2,
+        "type" : "MC",
+        "question" : "Seberapa sering kamu menggunakan media sosial online untuk berinteraksi dengan orang-orang?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 3,
+        "type" : "MC",
+        "question" : "Apakah kamu sering membaca berita secara daring/online?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 4,
+        "type" : "MC",
+        "question" : "Apakah kamu menggunakan bahasa daerah ketika berinteraksi dengan orang lain di media sosial?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 5,
+        "type" : "MC",
+        "question" : "Apakah kamu menggunakan platform aplikasi pembelajaran bahasa? (Duolingo, Baso, dan sejenisnya)?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 6,
+        "type" : "MC",
+        "question" : "Apakah kamu mengetahui adanya kamus digital Bahasa Indonesia--Bahasa Daerah yang tersedia di PlayStore?",
+        "answer":[
+            "Ya",
+            "Tidak"
+        ]
+    },
+    {
+        "id" : 7,
+        "type" : "MC",
+        "question" : "Apakah kamu sering menggunakan fitur pesan instan untuk berinteraksi dengan orang lain di dalam media sosial? (WhatsApp, Facebook Messenger, Line, dan sejenisnya)?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 8,
+        "type" : "MC",
+        "question" : "Apakah kamu menggunakan singkatan dan akronim asing pada saat melakukan interaksi dengan orang lain di media sosial? (Laugh Out Loud (LOL), On The Way (OTW) dan sejenisnya?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 9,
+        "type" : "MC",
+        "question" : "Apakah kamu sering menemukan iklan/banner di media sosial yang menggunakan istilah, singkatan, dan akronim asing?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 10,
+        "type" : "MC",
+        "question" : "Apakah kamu menemukan terminologi baru yang kamu adaptasi ke dalam bahasa percakapanmu sehari-hari?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 11,
+        "type" : "MC",
+        "question" : "Apakah kamu menggaungkan bahasa daerahmu di media sosial (Mengunggah caption dan berkomentar menggunakan bahasa daerah)?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 12,
+        "type" : "MC",
+        "question" : "Apakah di media sosial kamu bergabung dengan komunitas atau grup yang menggunakan bahasa daerah selain yang kamu tuturkan saat ini?",
+        "answer":[
+            "Ya",
+            "Tidak"
+        ]
+    },
+    {
+        "id" : 13,
+        "type" : "MC",
+        "question" : "Jika jawabanmu \"Ya\", seberapa sering kamu berkomunikasi dengan komunitas/grup yang menggunakan bahasa daerah lain tersebut?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 14,
+        "type" : "MC",
+        "question" : "Apakah kamu pernah menemukan akun yang membuat konten dengan bahasa daerah?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 15,
+        "type" : "MC",
+        "question" : "Apakah kamu mengikuti (follow) dan memberikan respons positif berkaitan dengan akun yang membuat konten dengan bahasa daerah?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 16,
+        "type" : "MC",
+        "question" : "Apakah kamu pernah menggunakan penerjemah daring/online untuk menerjemahkan bahasa lain ke dalam bahasa daerahmu?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 17,
+        "type" : "MC",
+        "question" : "Jika aplikasi yang kamu pasang/install di gawai kamu saat ini menyediakan bahasa daerah, apakah kamu ingin mengganti pengaturan bahasa yang ada di aplikasimu ke dalam bahasa daerah?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 18,
+        "type" : "MC",
+        "question" : "Apakah kamu pernah menggunakan bahasa daerah untuk membuat konten di media sosial?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    }
+]

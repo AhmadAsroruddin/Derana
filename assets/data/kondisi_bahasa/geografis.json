@@ -1,0 +1,149 @@
+[
+    {
+        "id" : 1,
+        "type" : "MC",
+        "question" : "Apakah jarak dari tempat tinggalmu saat ini jauh dari wilayah perkotaan?", "answer" : [
+            "Sangat Jauh", 
+            "Jauh", 
+            "Cukup Jauh", 
+            "Dekat", 
+            "Cukup Dekat", 
+            "Sangat Dekat" 
+        ]
+    },
+    {
+        "id" : 2,
+        "type" : "MC",
+        "question" : "Apa jenis transportasi yang biasa digunakan untuk ke wilayah tempat tinggal kamu?", 
+        "answer" : [
+            "Motor (Roda Dua)",
+            "Mobil (Roda Empat)",
+            "Kapal Laut",
+            "Pesawat"
+        ]
+    },
+    {
+        "id" : 3,
+        "type" : "MC",
+        "question" : "Apakah kamu tinggal di daerah pesisir pantai?", 
+        "answer" : [
+           "Ya",
+           "Tidak"
+        ]
+    },
+    {
+        "id" : 4,
+        "type" : "MC",
+        "question" : "Apakah kamu tinggal di daerah pengunungan?", 
+        "answer" : [
+           "Ya",
+           "Tidak"
+        ]
+    },
+    {
+        "id" : 5,
+        "type" : "MC",
+        "question" : "Apakah kamu tinggal di daerah pedesaan?", 
+        "answer" : [
+           "Ya",
+           "Tidak"
+        ]
+    },
+    {
+        "id" : 6,
+        "type" : "MC",
+        "question" : "Apakah kamu tinggal di daerah perkotaan?", 
+        "answer" : [
+           "Ya",
+           "Tidak"
+        ]
+    },
+    {
+        "id" : 7,
+        "type" : "MC",
+        "question" : "Apakah ada penutur bahasa lain yang datang ke wilayah kamu?", 
+        "answer" : [
+            "Sangat Banyak",
+            "Banyak",
+            "Cukup Banyak",
+            "Tidak Banyak",
+            "Tidak Ada"
+        ]
+    },
+    {
+        "id" : 8,
+        "type" : "MC",
+        "question" : "Apakah akses menuju wilayah kamu bisa dilalui menggunakan kendaraan roda empat?", 
+        "answer" : [
+            "Ya",
+            "Tidak"
+        ]
+    },
+    {
+        "id" : 9,
+        "type" : "MC",
+        "question" : "Berapa jarak wilayah kamu ke perkotaan?", 
+        "answer" : [
+            "Sangat Jauh", 
+            "Jauh", 
+            "Cukup Jauh", 
+            "Dekat", 
+            "Cukup Dekat", 
+            "Sangat Dekat" 
+        ]
+    },
+    {
+        "id" : 10,
+        "type" : "MC",
+        "question" : "Apakah kamu pernah pindah dari tempat tinggalmu sebelumnya?", 
+        "answer" : [
+            "Ya",
+            "Tidak"
+        ]
+    },
+    {
+        "id" : 11,
+        "type" : "FIB",
+        "question" : "Jika kamu pernah pindah, sebutkan wilayah tempat tinggalmu sebelumnya (desa/kelurahan, kecamatan, kabupaten, provinsi, negara)", 
+        "answer" : [
+           
+        ]
+    },
+    {
+        "id" : 12,
+        "type" : "MC",
+        "question" : "Apakah ada bahasa lain yang dituturkan oleh kelompok tutur/masyarakat di sekitar wilayah kamu?", 
+        "answer" : [
+            "Sangat Banyak",
+            "Banyak",
+            "Cukup Banyak",
+            "Tidak Banyak",
+            "Tidak Ada"
+        ]
+    },
+    {
+        "id" : 13,
+        "type" : "FIB",
+        "question" : "Apakah ada bahasa lain yang dituturkan oleh kelompok tutur/masyarakat di sekitar wilayah kamu?", 
+        "answer" : [
+            
+        ]
+    },
+    {
+        "id" : 14,
+        "type" : "FIB",
+        "question" : "Jika ada bahasa lain selain bahasa yang kamu tuturkan, silakan masukkan wilayah penggunaan bahasa tersebut (kampung/desa/kelurahan)", 
+        "answer" : [
+            
+        ]
+    },
+    {
+        "id" : 15,
+        "type" : "MC",
+        "question" : "Apakah untuk menuju wilayah tempat tinggal kamu saat ini hanya bisa dijangkau menggunakan pesawat/kapal laut?", 
+        "answer" : [
+            "Ya",
+            "Tidak"
+        ]
+    }
+]

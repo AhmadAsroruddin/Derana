@@ -1,0 +1,302 @@
+[
+    {
+        "id": 1,
+        "type": "MC",
+        "question": "Bahasa daerah kamu dapat menunjukkan jati diri/identitas kedaerahanmu.",
+        "answer": [
+            "Sangat Tidak Setuju",
+            "Tidak Setuju",
+            "Kurang Setuju",
+            "Setuju",
+            "Sangat Setuju"
+        ]
+    },
+    {
+        "id": 2,
+        "type": "MC",
+        "question": "Bahasa daerah kamu merupakan sarana antarindividu, keluarga, dan masyarakat di daerah.",
+        "answer": [
+            "Sangat Tidak Setuju",
+            "Tidak Setuju",
+            "Kurang Setuju",
+            "Setuju",
+            "Sangat Setuju"
+        ]
+    },
+    {
+        "id": 3,
+        "type": "MC",
+        "question": "Anak-anak di wilayahmu perlu menguasai bahasa daerah yang kamu tuturkan.",
+        "answer": [
+            "Sangat Tidak Setuju",
+            "Tidak Setuju",
+            "Kurang Setuju",
+            "Setuju",
+            "Sangat Setuju"
+        ]
+    },
+    {
+        "id": 4,
+        "type": "MC",
+        "question": "Seberapa sering kamu menggunakan/menuturkan bahasa daerah.",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 5,
+        "type": "MC",
+        "question": "Apakah kamu berkomunikasi dengan penutur bahasa lain?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 6,
+        "type": "MC",
+        "question": "Lebih mudah belajar bahasa daerah daripada belajar bahasa Indonesia.",
+        "answer": [
+            "Sangat Tidak Setuju",
+            "Tidak Setuju",
+            "Kurang Setuju",
+            "Setuju",
+            "Sangat Setuju"
+        ]
+    },
+    {
+        "id": 7,
+        "type": "MC",
+        "question": "Bahasa daerahmu lebih bermanfaat daripada bahasa Indonesia.",
+        "answer": [
+            "Sangat Tidak Setuju",
+            "Tidak Setuju",
+            "Kurang Setuju",
+            "Setuju",
+            "Sangat Setuju"
+        ]
+    },
+    {
+        "id": 8,
+        "type": "MC",
+        "question": "Pada waktu berbincang dengan anggota atau kelompok suku yang berasal dari wilayahmu dan dia/mereka mengetahui bahasa daerahmu, kamu lebih memilih untuk menggunakan bahasa daerah.",
+        "answer": [
+            "Sangat Tidak Setuju",
+            "Tidak Setuju",
+            "Kurang Setuju",
+            "Setuju",
+            "Sangat Setuju"
+        ]
+    },
+    {
+        "id": 9,
+        "type": "MC",
+        "question": "Kamu bangga dapat menggunakan bahasa daerahmu dengan baik.",
+        "answer": [
+            "Sangat Tidak Setuju",
+            "Tidak Setuju",
+            "Kurang Setuju",
+            "Setuju",
+            "Sangat Setuju"
+        ]
+    },
+    {
+        "id": 10,
+        "type": "MC",
+        "question": "Kamu yakin bahwa bahasa daerah akan berkembang sesuai dengan perkembangan zaman (ke arah yang lebih baik). Misal: semakin banyak penuturnya, bahasa dapat beradaptasi dengan perkembangan teknologi.",
+        "answer": [
+            "Sangat Tidak Setuju",
+            "Tidak Setuju",
+            "Kurang Setuju",
+            "Setuju",
+            "Sangat Setuju"
+        ]
+    },
+    {
+        "id": 11,
+        "type": "MC",
+        "question": "Bahasa daerahmu harus digunakan di antara sesama anggota keluarga yang ada di rumah.",
+        "answer": [
+            "Sangat Tidak Setuju",
+            "Tidak Setuju",
+            "Kurang Setuju",
+            "Setuju",
+            "Sangat Setuju"
+        ]
+    },
+    {
+        "id": 12,
+        "type": "MC",
+        "question": "Bahasa daerahmu harus dikuasai dan digunakan oleh setiap anggota kelompok (suku) kamu.",
+        "answer": [
+            "Sangat Tidak Setuju",
+            "Tidak Setuju",
+            "Kurang Setuju",
+            "Setuju",
+            "Sangat Setuju"
+        ]
+    },
+    {
+        "id": 13,
+        "type": "MC",
+        "question": "Kamu lebih suka membaca buku-buku yang berbahasa daerahmu.",
+        "answer": [
+            "Sangat Tidak Setuju",
+            "Tidak Setuju",
+            "Kurang Setuju",
+            "Setuju",
+            "Sangat Setuju"
+        ]
+    },
+    {
+        "id": 14,
+        "type": "MC",
+        "question": "Kamu lebih memilih menggunakan bahasa daerahmu ketika menyapa orang lain walaupun orang yang kamu sapa tidak mengetahui/menuturkan bahasa daerahmu.",
+        "answer": [
+            "Sangat Tidak Setuju",
+            "Tidak Setuju",
+            "Kurang Setuju",
+            "Setuju",
+            "Sangat Setuju"
+        ]
+    },
+    {
+        "id": 15,
+        "type": "MC",
+        "question": "Seberapa sering kamu menggunakan bahasa daerah lain?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 16,
+        "type": "MC",
+        "question": "Seberapa sering kamu menggunakan bahasa Indonesia?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 17,
+        "type": "MC",
+        "question": "Seberapa sering kamu menggunakan bahasa asing?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 18,
+        "type": "MC",
+        "question": "Bahasa daerahmu sama penting dengan bahasa Indonesia dalam konteks kedaerahan.",
+        "answer": [
+            "Sangat Tidak Setuju",
+            "Tidak Setuju",
+            "Kurang Setuju",
+            "Setuju",
+            "Sangat Setuju"
+        ]
+    },
+    {
+        "id": 19,
+        "type": "MC",
+        "question": "Kamu lebih memilih menggunakan bahasa daerah untuk mengekspresikan/menggambarkan perasaanmu dibanding dengan menggunakan bahasa Indonesia.",
+        "answer": [
+            "Sangat Tidak Setuju",
+            "Tidak Setuju",
+            "Kurang Setuju",
+            "Setuju",
+            "Sangat Setuju"
+        ]
+    },
+    {
+        "id": 20,
+        "type": "MC",
+        "question": "Bahasa daerahmu lebih bermartabat dibandingkan dengan bahasa Indonesia.",
+        "answer": [
+            "Sangat Tidak Setuju",
+            "Tidak Setuju",
+            "Kurang Setuju",
+            "Setuju",
+            "Sangat Setuju"
+        ]
+    },
+    {
+        "id": 21,
+        "type": "MC",
+        "question": "Apakah kamu menguasai bahasa daerah lain, selain bahasa daerah yang kamu tuturkan saat ini?",
+        "answer": [
+            "Paham dan bisa berbicara dengan fasih dalam bahasa daerah lain",
+            "Paham dan bisa berbicara dengan baik dalam bahasa daerah lain",
+            "Paham dan bisa berbicara sedikit dalam bahasa daerah lain",
+            "Paham dan tidak bisa berbicara dalam bahasa daerah lain",
+            "Tidak paham dan tidak bisa berbicara dalam bahasa daerah lain"
+        ]
+    },
+    {
+        "id": 22,
+        "type": "MC",
+        "question": "Bagaimana penguasaan kamu terhadap bahasa Indonesia?",
+        "answer": [
+            "Paham dan bisa berbicara dengan fasih dalam bahasa Indonesia",
+            "Paham dan bisa berbicara dengan baik dalam bahasa Indonesia",
+            "Paham dan bisa berbicara sedikit dalam bahasa Indonesia",
+            "Paham dan tidak bisa berbicara dalam bahasa Indonesia",
+            "Tidak paham dan tidak bisa berbicara dalam bahasa Indonesia"
+        ]
+    },
+    {
+        "id": 23,
+        "type": "MC",
+        "question": "Sepengetahuanmu, dibandingkan dengan bahasa daerah yang kamu tuturkan saat ini, bagaimana perbandingan jumlah penutur bahasa daerah lain di wilayahmu saat ini?",
+        "answer": [
+            "Mayoritas besar penutur bahasa daerah lain",
+            "Penutur bahasa daerah lain lebih banyak dari penutur bahasa daerah saya",
+            "Penutur bahasa daerah lain sama banyak dengan penutur bahasa daerah saya",
+            "Penutur bahasa daerah lain lebih sedikit dari penutur bahasa daerah saya",
+            "Tidak ada penutur bahasa daerah lain"
+        ]
+    },
+    {
+        "id": 24,
+        "type": "MC",
+        "question": "Sepengetahuanmu, apakah masyarakat di wilayahmu menggunakan bahasa daerah yang kamu tuturkan saat ini?",
+        "answer": [
+            "Tidak Ada",
+            "Tidak Banyak",
+            "Cukup Banyak",
+            "Banyak",
+            "Sangat Banyak"
+        ]
+    },
+    {
+        "id": 25,
+        "type": "MC",
+        "question": "Sepengetahuanmu, apakah penduduk/masyarakat di wilayahmu juga menggunakan/memahami bahasa asing?",
+        "answer": [
+            "Paham dan bisa berbicara dengan fasih dalam bahasa asing",
+            "Paham dan bisa berbicara dengan baik dalam bahasa asing",
+            "Paham dan bisa berbicara sedikit dalam bahasa asing",
+            "Paham dan tidak bisa berbicara dalam bahasa asing",
+            "Tidak paham dan tidak bisa berbicara dalam bahasa asing"
+        ]
+    }
+]

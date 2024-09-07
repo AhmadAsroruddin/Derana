@@ -1,0 +1,278 @@
+[
+    {
+        "id": 1,
+        "type": "MC",
+        "question": "Apakah kamu menggunakan bahasa daerahmu pada saat berkomunikasi dengan keluarga di rumah?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 2,
+        "type": "MC",
+        "question": "Apakah kamu menggunakan bahasa daerahmu ketika berinteraksi dengan masyarakat di luar rumah?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 3,
+        "type": "MC",
+        "question": "Apakah kamu menggunakan bahasa daerahmu ketika berkomunikasi dengan orang yang lebih tua di luar rumah?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 4,
+        "type": "MC",
+        "question": "Apakah bahasa daerahmu digunakan dalam kegiatan keagamaan di tempat ibadah?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 5,
+        "type": "MC",
+        "question": "Apakah kamu menggunakan bahasa daerahmu dalam interaksi sosial atau profesional di wilayahmu?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 6,
+        "type": "MC",
+        "question": "Sepengetahuan kamu, apakah bahasa daerah digunakan secara aktif di komunitas sosial yang ada di wilayah kamu?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 7,
+        "type": "MC",
+        "question": "Apakah bahasa daerah digunakan secara aktif di tempat kerja?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 8,
+        "type": "MC",
+        "question": "Sepengetahuan kamu, apakah bahasa daerah digunakan secara aktif di tempat kerja atau tempat umum di wilayah kamu?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 9,
+        "type": "MC",
+        "question": "Apakah anggota keluarga atau kerabat kamu menggunakan bahasa daerah untuk berkomunikasi sehari-hari?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 10,
+        "type": "MC",
+        "question": "Apakah anak-anak di wilayahmu biasa menggunakan bahasa daerah untuk berinteraksi dengan sesama teman?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 11,
+        "type": "MC",
+        "question": "Sepengetahuan kamu, apakah bahasa daerah yang biasa digunakan untuk acara formal seperti pertemuan resmi?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 12,
+        "type": "MC",
+        "question": "Apakah kamu menggunakan bahasa daerah untuk menyampaikan informasi atau menyampaikan pendapat di tempat umum?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 13,
+        "type": "MC",
+        "question": "Apakah kamu menggunakan bahasa daerah untuk berkomunikasi dengan orang yang lebih muda di wilayah kamu?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 14,
+        "type": "MC",
+        "question": "Sepengetahuan kamu, apakah bahasa daerah digunakan oleh masyarakat sekitar dalam interaksi sehari-hari?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 15,
+        "type": "MC",
+        "question": "Apakah kamu menggunakan bahasa daerah untuk berkomunikasi dengan sesama teman di tempat umum?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 16,
+        "type": "MC",
+        "question": "Apakah bahasa daerah digunakan oleh kelompok usia di wilayah kamu?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 17,
+        "type": "MC",
+        "question": "Sepengetahuan kamu, apakah bahasa daerah digunakan dalam kegiatan keagamaan di tempat ibadah di wilayah kamu?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 18,
+        "type": "MC",
+        "question": "Sepengetahuan kamu, apakah bahasa daerah digunakan dalam upacara adat?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 19,
+        "type": "MC",
+        "question": "Sepengetahuan kamu, apakah bahasa daerah digunakan dalam acara formal seperti upacara resmi di wilayah kamu?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 20,
+        "type": "MC",
+        "question": "Sepengetahuan kamu, apakah bahasa daerah digunakan oleh generasi 30-50 tahun?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 21,
+        "type": "MC",
+        "question": "Sepengetahuan kamu, apakah bahasa daerah digunakan oleh generasi tua (lebih dari 50 tahun) dalam berkomunikasi sehari-hari?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 22,
+        "type": "MC",
+        "question": "Apakah kamu menggunakan bahasa daerah untuk berkomunikasi dengan generasi muda di wilayah kamu?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 23,
+        "type": "MC",
+        "question": "Apakah bahasa daerah digunakan dalam kegiatan sekolah atau acara formal di wilayah kamu?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    }
+]

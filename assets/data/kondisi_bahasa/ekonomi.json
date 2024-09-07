@@ -1,0 +1,200 @@
+[
+    {
+        "id" : 1,
+        "type" : "MC",
+        "question" : "Apakah kamu menggunakan bahasa daerah saat tawar-menawar/kegiatan jual-beli di pasar/warung?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 2,
+        "type" : "MC",
+        "question" : "Apakah kamu menggunakan bahasa daerah pada saat bekerja di tempatmu bekerja saat ini?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 3,
+        "type" : "MC",
+        "question" : "Apakah kamu menggunakan bahasa daerah pada saat berbicara dengan aparat desa/kelurahan di kantor desa/kelurahan?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 4,
+        "type" : "MC",
+        "question" : "Apakah di tempat kamu saat ini ada pasar modern, pusat perbelanjaan/mall?",
+        "answer":[
+            "Ya",
+            "Tidak"
+        ]
+    },
+    {
+        "id" : 5,
+        "type" : "MC",
+        "question" : "Apakah kamu sering menggunakan aplikasi berbelanja daring/online (e-commerce), seperti Tokopedia, Shopee, Bukalapak?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 6,
+        "type" : "MC",
+        "question" : "Jika jawaban kamu sering, apakah kamu sering membeli barang tersebut dari ibu kota (Jabodetabek)?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 7,
+        "type" : "MC",
+        "question" : "Seberapa sering kamu menggunakan fitur chat atau obrolan pada aplikasi jual beli online (e-commerce) tersebut? ",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 8,
+        "type" : "MC",
+        "question" : "Pada saat kamu pergi ke pasar tradisional, apakah kamu sering melihat pedagang menawarkan barang dagangannya menggunakan bahasa daerah?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 9,
+        "type" : "MC",
+        "question" : "Pada saat kamu pergi ke pasar tradisional, apakah kamu sering melihat pembeli menawar barang dengan menggunakan bahasa daerah?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 10,
+        "type" : "MC",
+        "question" : "Apakah kamu sering pergi ke pasar modern/mall yang ada di wilayah tempat tinggal kamu?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 11,
+        "type" : "MC",
+        "question" : "Apakah bahasa daerahmu digunakan di tempatmu bekerja kamu saat ini?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 12,
+        "type" : "MC",
+        "question" : "Jika kamu pergi ke pasar modern/mall bersama dengan keluarga/teman/kerabat, apakah kamu menggunakan bahasa daerah untuk berkomunikasi?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 13,
+        "type" : "MC",
+        "question" : "Apakah kamu menggunakan bahasa daerah pada saat mengikuti/melaksanakan rapat kerja di tempat kerjamu saat ini?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 14,
+        "type" : "MC",
+        "question" : "Apakah kamu saat ini merantau untuk bekerja dari tempat tinggalmu sebelumnya?",
+        "answer":[
+            "Ya",
+            "Tidak"
+        ]
+    },
+    {
+        "id" : 15,
+        "type" : "MC",
+        "question" : "Jika jawabanmu \"Iya\", berapa lama kamu merantau saat ini?",
+        "answer":[
+            "Tidak Lama (6 bulan)",
+            "Sebentar (1 tahun)",
+            "Cukup Lama (2 tahun)",
+            "Lama (>3 tahun)",
+            "Sangat Lama (>5 tahun)"
+        ]
+    },
+    {
+        "id" : 16,
+        "type" : "MC",
+        "question" : "Jika jawabanmu \"Iya\", apakah di tempat kerjamu saat ini kolega/rekan kerjamu berbahasa daerah lain untuk berkomunikasi dengan suku yang sama?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 17,
+        "type" : "MC",
+        "question" : "Apakah menurutmu menggunakan bahasa daerah di tempat kerja itu diperlukan?",
+        "answer":[
+            "Sangat Tidak Perlu",
+            "Tidak Perlu",
+            "Cukup Perlu",
+            "Perlu",
+            "Sangat Perlu"
+        ]
+    }
+]

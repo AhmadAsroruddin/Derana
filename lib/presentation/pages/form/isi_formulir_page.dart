@@ -19,7 +19,7 @@ class IsiFormulirPage extends StatefulWidget {
 
 class _IsiFormulirPageState extends State<IsiFormulirPage> {
   var currPage = "Identitas";
-
+  var enableChangeColor = false;
   final List<String> dataList = [
     "Geografis",
     "Ekonomi",
@@ -35,6 +35,16 @@ class _IsiFormulirPageState extends State<IsiFormulirPage> {
   @override
   Widget build(BuildContext context) {
     final pageProvider = Provider.of<KondisiBahasaPageProvider>(context);
+
+    if (pageProvider.getIsScroll == true) {
+      setState(() {
+        enableChangeColor = true;
+      });
+    } else {
+      setState(() {
+        enableChangeColor = false;
+      });
+    }
 
     return Scaffold(
       appBar: AppBar(
@@ -69,8 +79,10 @@ class _IsiFormulirPageState extends State<IsiFormulirPage> {
                         primaryColor, // Warna awal
                         currPage == "Identitas"
                             ? lightBackgroundColor
-                            : const Color.fromRGBO(
-                                0, 164, 222, .15), // Warna akhir
+                            : enableChangeColor == true
+                                ? lightBackgroundColor
+                                : const Color.fromRGBO(
+                                    0, 164, 222, .15), // Warna akhir
                       ],
                     ),
                   ),
@@ -193,21 +205,18 @@ class _IsiFormulirPageState extends State<IsiFormulirPage> {
                   ),
                 ),
               ),
-              SingleChildScrollView(
-                child: Container(
-                  color: lightBackgroundColor,
-                  padding: EdgeInsets.symmetric(
-                    horizontal:
-                        currPage == "Identitas" ? deviceWidth * 0.06 : 0,
-                  ),
-                  width: deviceWidth,
-                  height: deviceHeight * 0.48,
-                  child: currPage == "Identitas"
-                      ? const IdentitasPage()
-                      : currPage == "Kondisi Bahasa"
-                          ? const KondisiBahasaPage()
-                          : const Text("Kosakata"),
+              Container(
+                color: lightBackgroundColor,
+                padding: EdgeInsets.symmetric(
+                  horizontal: currPage == "Identitas" ? deviceWidth * 0.06 : 0,
                 ),
+                width: deviceWidth,
+                height: deviceHeight * 0.48,
+                child: currPage == "Identitas"
+                    ? const IdentitasPage()
+                    : currPage == "Kondisi Bahasa"
+                        ? const KondisiBahasaPage()
+                        : const Text("Kosakata"),
               ),
               Container(
                 color: whiteColor,
@@ -234,6 +243,7 @@ class _IsiFormulirPageState extends State<IsiFormulirPage> {
                                 } else {
                                   pageProvider.backwardPage();
                                 }
+                                setState(() {});
                               }
                             },
                             child: Container(
@@ -279,6 +289,7 @@ class _IsiFormulirPageState extends State<IsiFormulirPage> {
                               });
                             } else if (currPage == "Kondisi Bahasa") {
                               pageProvider.forwardPage();
+                              setState(() {});
                             }
                           },
                           child: Container(

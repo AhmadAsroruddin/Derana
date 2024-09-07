@@ -3,6 +3,7 @@ import 'package:derana_multipart/presentation/shared/theme.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
+import 'isi_formulir_page.dart';
 import 'model_bottom_widget.dart';
 
 class FormPage extends StatefulWidget {
@@ -117,10 +118,11 @@ class _FormPageState extends State<FormPage> {
                                 color: primaryColor,
                               ),
                               child: Center(
-                                  child: Text(
-                                "Unduh",
-                                style: whiteTextStyle,
-                              )),
+                                child: Text(
+                                  "Unduh",
+                                  style: whiteTextStyle,
+                                ),
+                              ),
                             )
                           ],
                         ),
@@ -424,20 +426,26 @@ class _FormPageState extends State<FormPage> {
                     SizedBox(
                       height: deviceHeight * 0.01,
                     ),
-                    Container(
-                      width: deviceWidth,
-                      padding: EdgeInsets.symmetric(
-                        vertical: deviceHeight * 0.01,
-                        horizontal: deviceWidth * 0.1,
-                      ),
-                      decoration: BoxDecoration(
-                        color: primaryColor,
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: Center(
-                        child: Text(
-                          "Lanjutkan",
-                          style: whiteTextStyle,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context)
+                            .pushNamed(IsiFormulirPage.routeName);
+                      },
+                      child: Container(
+                        width: deviceWidth,
+                        padding: EdgeInsets.symmetric(
+                          vertical: deviceHeight * 0.01,
+                          horizontal: deviceWidth * 0.1,
+                        ),
+                        decoration: BoxDecoration(
+                          color: primaryColor,
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: Center(
+                          child: Text(
+                            "Lanjutkan",
+                            style: whiteTextStyle,
+                          ),
                         ),
                       ),
                     )

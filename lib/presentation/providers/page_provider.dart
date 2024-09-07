@@ -27,6 +27,7 @@ class KondisiBahasaPageProvider with ChangeNotifier {
 
   late String _currPage;
   late String _currPageDesc;
+  bool scrollOffset = false;
 
   KondisiBahasaPageProvider() {
     _currPage = pages[0];
@@ -34,6 +35,7 @@ class KondisiBahasaPageProvider with ChangeNotifier {
   }
   String get currPage => _currPage;
   String get currPageDesc => _currPageDesc;
+  bool get getIsScroll => scrollOffset;
 
   int getIndex() {
     int currIndexPage = pages.indexOf(_currPage);
@@ -62,6 +64,11 @@ class KondisiBahasaPageProvider with ChangeNotifier {
     } else {
       print("You are in the first page");
     }
+    notifyListeners();
+  }
+
+  void updateScrollOffset(bool status) {
+    scrollOffset = status;
     notifyListeners();
   }
 }

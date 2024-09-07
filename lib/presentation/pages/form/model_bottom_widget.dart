@@ -1,4 +1,3 @@
-import 'package:derana_multipart/presentation/pages/form/isi_formulir_page.dart';
 import 'package:flutter/material.dart';
 
 import '../../shared/const.dart';
@@ -61,9 +60,7 @@ class ModalBottomWidget extends StatelessWidget {
             height: deviceHeight * 0.02,
           ),
           GestureDetector(
-            onTap: () {
-              Navigator.of(context).pushNamed(IsiFormulirPage.routeName);
-            },
+            onTap: () {},
             child: Container(
               margin: EdgeInsets.symmetric(
                 horizontal: deviceWidth * 0.06,
