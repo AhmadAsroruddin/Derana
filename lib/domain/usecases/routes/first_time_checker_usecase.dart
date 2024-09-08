@@ -5,7 +5,7 @@ class FirstTimeCheckerUsecase {
 
   FirstTimeCheckerUsecase({required this.repo});
 
-  bool execute() {
-    return repo.isFirstTime();
+  Future<bool> execute() async {
+    return await repo.isFirstTime();
   }
 }

@@ -25,7 +25,7 @@ class MyRouterDelegate extends RouterDelegate
   Future<void> _init() async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     final data = prefs.getBool('login');
-    isFirstTime = routeCubit.isFirstTime();
+    isFirstTime = await routeCubit.isFirstTime();
     isLogin = data;
     notifyListeners();
   }

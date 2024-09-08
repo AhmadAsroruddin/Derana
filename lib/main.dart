@@ -8,9 +8,8 @@ import 'package:provider/provider.dart';
 import './locator.dart' as di;
 
 void main() async {
+  di.init();
   WidgetsFlutterBinding.ensureInitialized();
-
-  await di.init();
   runApp(const MyApp());
 }
 
