@@ -1,0 +1,164 @@
+[
+    {
+        "id" : 1,
+        "type" : "MC",
+        "question" : "Apakah kamu mengetahui adanya peraturan pemerintah yang mengatur tentang pelestarian dan pelindungan bahasa daerah?",
+        "answer":[
+            "Ya",
+            "Tidak"
+        ]
+    },
+    {
+        "id" : 2,
+        "type" : "MC",
+        "question" : "Apakah kamu mengetahui adanya keberadaan badan/instansi pemerintah yang mempunyai tugas dan fungsi salah satunya untuk melindungi dan melestarikan bahasa daerah di wilayah kamu?",
+        "answer":[
+            "Ya",
+            "Tidak"
+        ]
+    },
+    {
+        "id" : 3,
+        "type" : "MC",
+        "question" : "Apakah pemerintah pada tingkat desa/kelurahan menganjurkan untuk menggunakan bahasa daerah di wilayah kamu?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 4,
+        "type" : "MC",
+        "question" : "Apakah pemerintah pada tingkat kecamatan menghargai/mengapresiasi penggunaan bahasa daerah di wilayah kamu?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 5,
+        "type" : "MC",
+        "question" : "Apakah pemerintah pada tingkat kabupaten/kota menghargai/mengapresiasi penggunaan bahasa daerah di wilayah kamu?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 6,
+        "type" : "MC",
+        "question" : "Apakah pemerintah pada tingkat provinsi menghargai/mengapresiasi penggunaan bahasa daerah di wilayah kamu?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 7,
+        "type" : "MC",
+        "question" : "Apakah terdapat adanya peraturan daerah yang mewajibkan untuk menggunakan bahasa daerah kamu di lingkungan pemerintahan dan perkantoran pada hari tertentu?",
+        "answer":[
+            "Ya",
+            "Tidak"
+        ]
+    },
+    {
+        "id" : 8,
+        "type" : "MC",
+        "question" : "Apakah ada peraturan pemerintah yang membatasi penggunaan bahasa daerah di wilayah kamu?",
+        "answer":[
+            "Ya",
+            "Tidak"
+        ]
+    },
+    {
+        "id" : 9,
+        "type" : "MC",
+        "question" : "Apakah pemerintah pada tingkat desa/kelurahan menghargai/mengapresiasi penggunaan bahasa daerah di wilayahmu?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 10,
+        "type" : "MC",
+        "question" : "Apakah pemerintah pada tingkat kabupaten/kota di wilayah kamu menganjurkan penggunaan bahasa daerah?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 11,
+        "type" : "MC",
+        "question" : "Apakah kamu tahu adanya program Pemetaan Bahasa Daerah di Indonesia dari Badan Pengembangan dan Pembinaan Bahasa, Kemdikbudristek?",
+        "answer":[
+            "Ya",
+            "Tidak"
+        ]
+    },
+    {
+        "id" : 12,
+        "type" : "MC",
+        "question" : "Apakah kamu tahu adanya program Vitalitas (Daya Hidup) Bahasa Daerah di Indonesia dari Badan Pengembangan dan Pembinaan Bahasa, Kemdikbudristek?",
+        "answer":[
+            "Ya",
+            "Tidak"
+        ]
+    },
+    {
+        "id" : 13,
+        "type" : "MC",
+        "question" : "Apakah kamu tahu adanya program Konservasi Bahasa Daerah dari Badan Pengembangan dan Pembinaan Bahasa, Kemdikbudristek?",
+        "answer":[
+            "Ya",
+            "Tidak"
+        ]
+    },
+    {
+        "id" : 14,
+        "type" : "MC",
+        "question" : "Apakah kamu tahu adanya program Revitalisasi Bahasa Daerah di Indonesia dari Badan Pengembangan dan Pembinaan Bahasa, Kemdikbudristek?",
+        "answer":[
+            "Ya",
+            "Tidak"
+        ]
+    },
+    {
+        "id" : 15,
+        "type" : "MC",
+        "question" : "Apakah kamu tahu adanya Festival Tunas Bahasa Ibu (Festival/Pertunjukan Siswa-Siswi SD/SMP yang menggunakan bahasa daerah)?",
+        "answer":[
+            "Ya",
+            "Tidak"
+        ]
+    },
+    {
+        "id" : 16,
+        "type" : "MC",
+        "question" : "Apakah kamu tahu adanya Laboratorium Kebinekaan Bahasa dan Sastra di Badan Pengembangan dan Pembinaan Bahasa, Kemdikbudristek?",
+        "answer":[
+            "Ya",
+            "Tidak"
+        ]
+    }
+]

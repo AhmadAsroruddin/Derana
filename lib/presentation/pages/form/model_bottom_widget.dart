@@ -1,4 +1,3 @@
-import 'package:derana_multipart/presentation/pages/form/isi_formulir_page.dart';
 import 'package:flutter/material.dart';
 
 import '../../shared/const.dart';
@@ -8,17 +7,11 @@ class ModalBottomWidget extends StatelessWidget {
   const ModalBottomWidget({
     super.key,
     required this.title,
-    required this.firstImage,
-    required this.firstSentences,
-    required this.secondImage,
-    required this.secondSentences,
+    required this.items,
   });
 
   final String title;
-  final String firstImage;
-  final String firstSentences;
-  final String secondImage;
-  final String secondSentences;
+  final List<ModalBottomItem> items;
 
   @override
   Widget build(BuildContext context) {
@@ -27,9 +20,9 @@ class ModalBottomWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
         color: Colors.white,
       ),
-      height: deviceHeight * 0.45,
       width: deviceWidth,
       child: Column(
+        mainAxisSize: MainAxisSize.min,
         children: <Widget>[
           Container(
             margin: EdgeInsets.only(
@@ -62,66 +55,12 @@ class ModalBottomWidget extends StatelessWidget {
           SizedBox(
             height: deviceHeight * 0.04,
           ),
-          Container(
-            margin: EdgeInsets.only(
-              left: deviceWidth * 0.06,
-              right: deviceWidth * 0.06,
-            ),
-            width: deviceWidth,
-            child: Row(
-              children: <Widget>[
-                Image.asset(
-                  "assets/form/$firstImage.png",
-                  scale: 1.5,
-                ),
-                SizedBox(
-                  width: deviceWidth * 0.05,
-                ),
-                SizedBox(
-                  width: deviceWidth * 0.65,
-                  child: Text(firstSentences,
-                      style: greyFormTextStyle.copyWith(
-                        fontSize: deviceWidth * 0.033,
-                      )),
-                )
-              ],
-            ),
-          ),
+          ...items.map((item) => ModalBottomItemWidget(item: item)).toList(),
           SizedBox(
-            height: deviceHeight * 0.035,
-          ),
-          Container(
-            margin: EdgeInsets.only(
-              left: deviceWidth * 0.06,
-              right: deviceWidth * 0.06,
-            ),
-            width: deviceWidth,
-            child: Row(
-              children: <Widget>[
-                Image.asset(
-                  "assets/form/$secondImage.png",
-                  scale: 1.5,
-                ),
-                SizedBox(
-                  width: deviceWidth * 0.05,
-                ),
-                SizedBox(
-                  width: deviceWidth * 0.65,
-                  child: Text(secondSentences,
-                      style: greyFormTextStyle.copyWith(
-                        fontSize: deviceWidth * 0.033,
-                      )),
-                )
-              ],
-            ),
-          ),
-          SizedBox(
-            height: deviceHeight * 0.05,
+            height: deviceHeight * 0.02,
           ),
           GestureDetector(
-            onTap: () {
-              Navigator.of(context).pushNamed(IsiFormulirPage.routeName);
-            },
+            onTap: () {},
             child: Container(
               margin: EdgeInsets.symmetric(
                 horizontal: deviceWidth * 0.06,
@@ -143,7 +82,60 @@ class ModalBottomWidget extends StatelessWidget {
                 ),
               ),
             ),
-          )
+          ),
+          SizedBox(
+            height: deviceHeight * 0.02,
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class ModalBottomItem {
+  final String image;
+  final String sentences;
+
+  ModalBottomItem({
+    required this.image,
+    required this.sentences,
+  });
+}
+
+class ModalBottomItemWidget extends StatelessWidget {
+  const ModalBottomItemWidget({
+    super.key,
+    required this.item,
+  });
+
+  final ModalBottomItem item;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.symmetric(
+        horizontal: deviceWidth * 0.06,
+        vertical: deviceHeight * 0.0175,
+      ),
+      width: deviceWidth,
+      child: Row(
+        children: <Widget>[
+          Image.asset(
+            "assets/form/${item.image}.png",
+            scale: 1.5,
+          ),
+          SizedBox(
+            width: deviceWidth * 0.05,
+          ),
+          SizedBox(
+            width: deviceWidth * 0.65,
+            child: Text(
+              item.sentences,
+              style: greyFormTextStyle.copyWith(
+                fontSize: deviceWidth * 0.033,
+              ),
+            ),
+          ),
         ],
       ),
     );

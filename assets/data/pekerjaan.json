@@ -1,0 +1,11 @@
+[
+    {"id":1, "label" : "Swasta"},
+    {"id":2, "label" : "Wiraswasta"},
+    {"id":3, "label" : "Aparatur Sipil Negara (ASN)"},
+    {"id":4, "label" : "TNI/Polri"},
+    {"id":5, "label" : "Guru"},
+    {"id":6, "label" : "Mahasiswa"},
+    {"id":7, "label" : "Dosen"},
+    {"id":8, "label" : "Petani"},
+    {"id":9, "label" : "Nelayan"}
+]

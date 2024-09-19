@@ -2,17 +2,16 @@ import 'package:derana_multipart/domain/repositories/route_repo.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class RouteRepoImpl extends RouteRepo {
-  final SharedPreferences pref;
-
-  RouteRepoImpl({required this.pref});
-
   @override
   Future<void> firstTimeDone() async {
+    final SharedPreferences pref = await SharedPreferences.getInstance();
     await pref.setBool('firstTime', false);
   }
 
   @override
-  bool isFirstTime() {
+  Future<bool> isFirstTime() async {
+    final SharedPreferences pref = await SharedPreferences.getInstance();
+
     bool isFirstTime = pref.getBool('firstTime') ?? true;
     return isFirstTime;
   }

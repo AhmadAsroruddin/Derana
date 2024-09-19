@@ -1,0 +1,74 @@
+[
+    {
+        "id" : 1,
+        "type" : "MC",
+        "question" : "Apakah bahasa daerah kamu digunakan dalam media cetak (koran, majalah)?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 2,
+        "type" : "MC",
+        "question" : "Apakah bahasa daerah kamu digunakan dalam siaran televisi atau radio?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 3,
+        "type" : "MC",
+        "question" : "Apakah kamu menikmati siaran berbahasa daerah dalam media massa (radio)?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 4,
+        "type" : "MC",
+        "question" : "Apakah kamu menikmati media massa (koran dan majalah) dalam berbahasa daerah?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 5,
+        "type" : "MC",
+        "question" : "Apakah kamu pernah menemukan/membuat pamflet/brosur yang menyajikan informasi dengan bahasa daerah di tempat tinggalmu?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id" : 6,
+        "type" : "MC",
+        "question" : "Apakah kamu pernah menemukan siniar/podcast yang membuat konten menggunakan bahasa daerah?",
+        "answer":[
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    }
+]

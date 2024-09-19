@@ -14,7 +14,7 @@ class RouteCubit extends Cubit<bool> {
     firstTimeUsecase.execute();
   }
 
-  bool isFirstTime() {
-    return firstTimeCheckerUsecase.execute();
+  Future<bool> isFirstTime() async {
+    return await firstTimeCheckerUsecase.execute();
   }
 }

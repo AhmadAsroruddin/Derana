@@ -1,0 +1,6 @@
+[
+    {"id" : 1, "label" : "< 1 bulan"},
+    {"id" : 2, "label" : "6 bulan"},
+    {"id" : 3, "label" : "1 tahun"},
+    {"id" : 4, "label" : "> 2 tahun"}
+]

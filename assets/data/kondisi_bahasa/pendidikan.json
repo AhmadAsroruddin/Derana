@@ -1,0 +1,167 @@
+[
+    {
+        "id": 1,
+        "type": "MC",
+        "question": "Apakah ada mata pelajaran/muatan lokal bahasa daerah yang diajarkan di sekolah-sekolah di wilayah kamu?",
+        "answer": [
+            "Ya",
+            "Tidak"
+        ]
+    },
+    {
+        "id": 2,
+        "type": "MC",
+        "question": "Sepengetahuan kamu, apakah guru-guru menggunakan bahasa daerah pada saat proses pembelajaran di dalam kelas?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 3,
+        "type": "MC",
+        "question": "Seberapa sering murid-murid menggunakan bahasa daerah dalam proses pembelajaran di dalam kelas?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 4,
+        "type": "MC",
+        "question": "Apakah guru-guru menggunakan bahasa daerah pada saat di luar proses pembelajaran di sekolah?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 5,
+        "type": "MC",
+        "question": "Apakah murid-murid menggunakan bahasa daerah pada saat di luar proses pembelajaran di sekolah?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 6,
+        "type": "MC",
+        "question": "Apakah terdapat buku sekolah yang ditulis dalam bahasa daerah kamu?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 7,
+        "type": "MC",
+        "question": "Apakah terdapat bahan ajar yang memadai untuk pembelajaran bahasa daerah di wilayah kamu?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 8,
+        "type": "MC",
+        "question": "Apakah terdapat pelatihan bagi guru-guru untuk mengajarkan bahasa daerah di sekolah?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 9,
+        "type": "MC",
+        "question": "Apakah terdapat ekstrakurikuler yang mengajarkan bahasa daerah di sekolah-sekolah wilayah kamu?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 10,
+        "type": "MC",
+        "question": "Apakah terdapat sekolah yang melarang siswa, guru, dan tenaga pendidikan untuk menggunakan bahasa daerah di sekolah?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 11,
+        "type": "MC",
+        "question": "Apakah kamu mengetahui adanya program studi yang mengajarkan bahasa daerah di perguruan tinggi wilayah kamu atau di Indonesia?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 12,
+        "type": "MC",
+        "question": "Apakah kamu mengetahui adanya event/kegiatan yang dilakukan oleh civitas akademika berkaitan dengan pelestarian dan penggunaan bahasa daerah di wilayah kamu?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 13,
+        "type": "MC",
+        "question": "Apakah kamu pernah menjadi narasumber/informan berkaitan dengan penelitian bahasa daerah di wilayah kamu?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    },
+    {
+        "id": 14,
+        "type": "MC",
+        "question": "Apakah kamu pernah melakukan penelitian berkaitan dengan fenomena bahasa yang terjadi di lingkungan sekitar kamu?",
+        "answer": [
+            "Tidak Pernah",
+            "Pernah",
+            "Jarang",
+            "Sering",
+            "Selalu"
+        ]
+    }
+]

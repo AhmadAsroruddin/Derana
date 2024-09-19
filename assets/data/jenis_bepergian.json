@@ -1,0 +1,9 @@
+[
+  {"id": 1, "label": "Luar Negeri"},
+  {"id": 2, "label": "Luar Pulau"},
+  {"id": 3, "label": "Luar Provinsi"},
+  {"id": 4, "label": "Luar Kabupaten"},
+  {"id": 5, "label": "Luar Kecamatan"},
+  {"id": 6, "label": "Luar Desa"}
+]
+
