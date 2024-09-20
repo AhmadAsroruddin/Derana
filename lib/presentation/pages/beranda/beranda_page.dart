@@ -1,4 +1,5 @@
 import 'package:derana_multipart/presentation/pages/form/form_page.dart';
+import 'package:derana_multipart/presentation/pages/kamus_bahasa/kamus_bahasa.dart';
 import 'package:derana_multipart/presentation/shared/const.dart';
 import 'package:derana_multipart/presentation/shared/theme.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,6 @@ class _BerandaPageState extends State<BerandaPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _scrollController.addListener(() {
       if (_scrollController.offset > 0) {
@@ -161,22 +161,40 @@ class _BerandaPageState extends State<BerandaPage> {
                                 ],
                               ),
                             ),
-                            const Row(
+                            Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
                                 FeatureWidget(
+                                  onTap: () {
+                                    PersistentNavBarNavigator.pushNewScreen(
+                                      context,
+                                      screen: const KamusBahasa(),
+                                      withNavBar: false,
+                                      pageTransitionAnimation:
+                                          PageTransitionAnimation.cupertino,
+                                    );
+                                  },
                                   image: "kamus",
                                   name: "Kamus Bahasa",
                                 ),
                                 FeatureWidget(
+                                  onTap: () {
+                                    print("penerjemah");
+                                  },
                                   image: "penerjemah",
                                   name: "Penerjemah",
                                 ),
                                 FeatureWidget(
+                                  onTap: () {
+                                    print("data bahasa");
+                                  },
                                   image: "data_bahasa",
                                   name: "Data Bahasa",
                                 ),
                                 FeatureWidget(
+                                  onTap: () {
+                                    print("petaBahasa");
+                                  },
                                   image: "peta_bahasa",
                                   name: "Peta Bahasa",
                                 ),
@@ -185,22 +203,34 @@ class _BerandaPageState extends State<BerandaPage> {
                             SizedBox(
                               height: deviceHeight * 0.02,
                             ),
-                            const Row(
+                            Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
                                 FeatureWidget(
+                                  onTap: () {
+                                    print("vitalitas bahasa");
+                                  },
                                   image: "vitalitas_bahasa",
                                   name: "Vitalitas Bahasa",
                                 ),
                                 FeatureWidget(
+                                  onTap: () {
+                                    print("video");
+                                  },
                                   image: "video",
                                   name: "Video Bahasa",
                                 ),
                                 FeatureWidget(
+                                  onTap: () {
+                                    print("buku");
+                                  },
                                   image: "buku",
                                   name: "Buku Digital",
                                 ),
                                 FeatureWidget(
+                                  onTap: () {
+                                    print("lainnya");
+                                  },
                                   image: "lainnya",
                                   name: "Lainnya",
                                 ),

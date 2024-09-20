@@ -25,7 +25,7 @@ class MiddleCardBelajar extends StatelessWidget {
       ),
       decoration: BoxDecoration(
         border: Border.all(
-          width: .2,
+          width: .4,
         ),
         borderRadius: BorderRadius.circular(10),
       ),

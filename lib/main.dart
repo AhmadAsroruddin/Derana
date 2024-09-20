@@ -1,5 +1,6 @@
 import 'package:derana_multipart/presentation/bloc/routes/route_cubit.dart';
 import 'package:derana_multipart/presentation/pages/form/isi_formulir_page.dart';
+import 'package:derana_multipart/presentation/pages/kamus_bahasa/kamus_bahasa.dart';
 import 'package:derana_multipart/presentation/providers/page_provider.dart';
 import 'package:derana_multipart/presentation/routes/router_delegate.dart';
 import 'package:flutter/material.dart';
@@ -45,6 +46,7 @@ class _MyAppState extends State<MyApp> {
         ),
         routes: {
           IsiFormulirPage.routeName: (context) => const IsiFormulirPage(),
+          KamusBahasa.routeName: (context) => const KamusBahasa()
         },
         home: Router(
           routerDelegate: myRouterDelegate,

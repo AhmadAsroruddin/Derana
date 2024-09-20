@@ -186,22 +186,34 @@ class TemukanPage extends StatelessWidget {
                   right: deviceWidth * 0.06,
                 ),
                 width: deviceWidth,
-                child: const Row(
+                child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     FeatureWidget(
+                      onTap: () {
+                        print("budaya");
+                      },
                       image: "budaya",
                       name: "Budaya",
                     ),
                     FeatureWidget(
+                      onTap: () {
+                        print("pekerjaan");
+                      },
                       image: "pekerjaan",
                       name: "Pekerjaan",
                     ),
                     FeatureWidget(
+                      onTap: () {
+                        print("makanan");
+                      },
                       image: "makanan",
                       name: "Makanan",
                     ),
                     FeatureWidget(
+                      onTap: () {
+                        print("wisata");
+                      },
                       image: "wisata",
                       name: "Wisata",
                     ),
