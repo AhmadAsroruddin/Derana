@@ -1,5 +1,6 @@
 import 'package:derana_multipart/presentation/pages/form/form_page.dart';
 import 'package:derana_multipart/presentation/pages/kamus_bahasa/kamus_bahasa.dart';
+import 'package:derana_multipart/presentation/pages/penerjemah/penerjemah_page.dart';
 import 'package:derana_multipart/presentation/shared/const.dart';
 import 'package:derana_multipart/presentation/shared/theme.dart';
 import 'package:flutter/material.dart';
@@ -179,7 +180,13 @@ class _BerandaPageState extends State<BerandaPage> {
                                 ),
                                 FeatureWidget(
                                   onTap: () {
-                                    print("penerjemah");
+                                    PersistentNavBarNavigator.pushNewScreen(
+                                      context,
+                                      screen: const PenerjemahPage(),
+                                      withNavBar: false,
+                                      pageTransitionAnimation:
+                                          PageTransitionAnimation.cupertino,
+                                    );
                                   },
                                   image: "penerjemah",
                                   name: "Penerjemah",

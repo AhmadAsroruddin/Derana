@@ -108,7 +108,7 @@ class _FormDetailModalState extends State<FormDetailModal> {
                 });
               },
             );
-          }).toList(),
+          }),
           Container(
             margin: EdgeInsets.only(bottom: deviceHeight * 0.02),
             width: deviceWidth,
