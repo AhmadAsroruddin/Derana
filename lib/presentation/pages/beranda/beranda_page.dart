@@ -1,3 +1,4 @@
+import 'package:derana_multipart/presentation/pages/data_bahasa/data_bahasa.dart';
 import 'package:derana_multipart/presentation/pages/form/form_page.dart';
 import 'package:derana_multipart/presentation/pages/kamus_bahasa/kamus_bahasa.dart';
 import 'package:derana_multipart/presentation/pages/penerjemah/penerjemah_page.dart';
@@ -193,7 +194,13 @@ class _BerandaPageState extends State<BerandaPage> {
                                 ),
                                 FeatureWidget(
                                   onTap: () {
-                                    print("data bahasa");
+                                    PersistentNavBarNavigator.pushNewScreen(
+                                      context,
+                                      screen: const DataBahasaPage(),
+                                      withNavBar: false,
+                                      pageTransitionAnimation:
+                                          PageTransitionAnimation.cupertino,
+                                    );
                                   },
                                   image: "data_bahasa",
                                   name: "Data Bahasa",

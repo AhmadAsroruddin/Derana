@@ -221,7 +221,7 @@ class _PenerjemahPageState extends State<PenerjemahPage> {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(25),
                         color: primaryColor,
-                        image: DecorationImage(
+                        image: const DecorationImage(
                           image: AssetImage(
                             "assets/image/swap.png",
                           ),
