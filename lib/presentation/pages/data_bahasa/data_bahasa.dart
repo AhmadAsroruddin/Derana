@@ -3,8 +3,9 @@ import 'package:derana_multipart/presentation/shared/feature_widget.dart';
 import 'package:derana_multipart/presentation/shared/theme.dart';
 import 'package:flutter/material.dart';
 
+import '../../shared/current_location_widget.dart';
 import '../belajar/belajar_page.dart';
-import '../temukan/temukan_bahasa_card.dart';
+import '../../shared/temukan_bahasa_card.dart';
 
 class DataBahasaPage extends StatefulWidget {
   const DataBahasaPage({super.key});
@@ -127,40 +128,7 @@ class _DataBahasaPageState extends State<DataBahasaPage> {
                       height: deviceHeight * 0.02,
                     ),
                     //LOCATION
-                    Container(
-                      width: deviceWidth,
-                      padding: EdgeInsets.symmetric(
-                        vertical: deviceHeight * 0.01,
-                        horizontal: deviceWidth * 0.01,
-                      ),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(30),
-                        color: primaryColor,
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: <Widget>[
-                          Text(
-                            "Kamu lagi ada di Maluku",
-                            style: whiteTextStyle.copyWith(
-                              fontSize: 14,
-                              fontWeight: semiBold,
-                            ),
-                          ),
-                          Container(
-                            width: deviceWidth * 0.3,
-                            height: deviceHeight * 0.025,
-                            decoration: const BoxDecoration(
-                              image: DecorationImage(
-                                image: AssetImage(
-                                  "assets/image/ganti_lokasi.png",
-                                ),
-                              ),
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
+                    const CurrentLocationWidget(),
                     SizedBox(
                       height: deviceHeight * 0.04,
                     ),
@@ -218,7 +186,7 @@ class _DataBahasaPageState extends State<DataBahasaPage> {
                 ),
               ),
             ),
-            //BAHASA ROW
+            //  ------------------------------- BAHASA ROW ---------------------------------
             Container(
               margin: EdgeInsets.only(bottom: deviceHeight * 0.02),
               padding: EdgeInsets.only(

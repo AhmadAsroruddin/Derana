@@ -58,8 +58,9 @@ class _LoginPageState extends State<LoginPage> {
                         isChecked = value ?? false;
                       });
                     },
-                    side: MaterialStateBorderSide.resolveWith(
-                      (states) => BorderSide(width: 1.0, color: Colors.black),
+                    side: WidgetStateBorderSide.resolveWith(
+                      (states) =>
+                          const BorderSide(width: 1.0, color: Colors.black),
                     ),
                   ),
                 ),

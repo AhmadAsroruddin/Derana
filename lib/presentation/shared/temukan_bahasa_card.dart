@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
-import '../../shared/const.dart';
-import '../../shared/theme.dart';
+import 'const.dart';
+import 'theme.dart';
 
 class TemukanBahasaCard extends StatelessWidget {
-  const TemukanBahasaCard({
-    super.key,
-    required this.bahasa,
-    required this.color,
-  });
+  const TemukanBahasaCard(
+      {super.key,
+      required this.bahasa,
+      required this.color,
+      this.isVitalitas = false});
   final String bahasa;
   final Color color;
+  final bool isVitalitas;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -44,6 +45,9 @@ class TemukanBahasaCard extends StatelessWidget {
               )
             ],
           ),
+          SizedBox(
+            height: deviceHeight * 0.03,
+          ),
           Text(
             "Klik untuk detail",
             style: blackTextStyle.copyWith(
@@ -51,12 +55,14 @@ class TemukanBahasaCard extends StatelessWidget {
               fontSize: 12.5,
             ),
           ),
-          LinearPercentIndicator(
-            lineHeight: deviceHeight * 0.01,
-            percent: 1,
-            barRadius: const Radius.circular(10),
-            progressColor: color,
-          )
+          isVitalitas == false
+              ? LinearPercentIndicator(
+                  lineHeight: deviceHeight * 0.01,
+                  percent: 1,
+                  barRadius: const Radius.circular(10),
+                  progressColor: color,
+                )
+              : Container()
         ],
       ),
     );

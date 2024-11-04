@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../../shared/const.dart';
 import '../../shared/feature_widget.dart';
-import 'temukan_bahasa_card.dart';
+import '../../shared/temukan_bahasa_card.dart';
 
 class TemukanPage extends StatelessWidget {
   const TemukanPage({super.key});
@@ -131,7 +131,6 @@ class TemukanPage extends StatelessWidget {
                     ////////////BAHASA CARD
                     Container(
                       margin: EdgeInsets.only(bottom: deviceHeight * 0.01),
-                      height: deviceHeight * 0.13,
                       width: deviceWidth,
                       child: SingleChildScrollView(
                         scrollDirection: Axis.horizontal,
